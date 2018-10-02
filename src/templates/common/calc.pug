@@ -1,0 +1,36 @@
+.calc
+    .calc__title
+        span Рассчитайте стоимость строительства:
+    .calc__blockselect 
+        .calc__blockselecttop
+            div
+                label.calc__label Площадь:
+                .calc__quantity-block.quantity-block
+                    button.calc__quantity-arrow-plus.quantity-arrow-plus
+                        img(src='./images/t.png', alt='')
+                    input.calc__quantity-num.quantity-num(type='text', value='1 м²')
+                    button.calc__quantity-arrow-minus.quantity-arrow-minus.calc__quantity-arrow-plus.calc__quantity-arrow-plus_b
+                        img(src='./images/b.png', alt='')
+            div
+                span.calc__label Этажность:
+                    select.calc__input.calc__input_select(name="")
+                        option(value="1") 1  
+                        option(value="2") 2
+                        option(value="3") 3
+                        option(value="4") 4
+                        option(value="5") 5  
+        div.calc__blockselectbottom
+            label.calc__label Технология строительства:
+                select.calc__input.calc__input_select2(name="")
+                    option(value="Ракушечник") Ракушечник
+                    option(value="Газобетон") Газобетон
+                    option(value="Каркасная") Каркасная
+                    option(value="Пеноблок") Пеноблок
+                    option(value="Каменная") Каменная
+                    option(value="Кирпичная") Кирпичная
+        .calc__blockbutton
+            button.calc__button 
+                span Посчитать
+    .calc__bottomblock
+        .calc__bottomblocktext Стоимость строительства:
+        .calc__bottomblocktext.calc__bottomblocktext_color 188 220 руб.

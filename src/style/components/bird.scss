@@ -1,0 +1,25 @@
+.bird{
+    width: 270px;
+    height: 384px;
+    border: 6px solid #cbaa45;
+    padding: 18px 44px 0 19px;
+    &__toptitleblock{
+        line-height: 25px;
+        margin-bottom: 17px; 
+        span {
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color:  $maintext;
+        }
+    }
+    &__topdescriptionblock{
+        line-height: 16px;
+        span{
+            font-size: 16px;
+        }
+    }
+    &__topimgblock{
+        margin-left: -24px;
+    }
+}

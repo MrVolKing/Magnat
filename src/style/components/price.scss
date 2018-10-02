@@ -1,0 +1,156 @@
+.price-content{
+    padding: 45px 0 95px 0;
+}
+
+.section-one{
+    padding: 55px 0 31px 0;
+    display: flex;
+    justify-content: space-between;
+    &__left{
+        position: relative;
+        width: 870px;
+        height: 476px;
+        overflow: hidden;
+        .pricepage__shadowblock{
+            position: absolute;
+            width: 870px;
+            height: 156px;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 200;
+            // padding: 187px 42px 25px 30px;
+            bottom: 0;
+        }
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__blockcallback{
+        width: 270px;
+        height: 62px;
+        background-color: #c7a948;
+        background-image: url(../images/telephone.png);
+        background-repeat: no-repeat;
+        background-position: left 34px center;
+        a{
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            span{
+                font-size: 22px;
+                font-weight: 800;
+                line-height: 22px;
+                color: $white;
+            }
+            div{
+                border-bottom: 1px solid $white;
+                width: 143px;
+                height: 3px;
+            }
+        }
+    }
+}
+
+.section-table{
+    &__table{
+        width: 1169px;
+        height: 382px;
+        border: 4px solid #c7a948;
+        text-align: center;
+    }
+    &__tr{
+        background-color: #d5b44a;
+    }
+    &__td1{
+        width: 180px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $white;
+        background-image: url(../images/flow.png);
+        background-position: left -26px bottom -70px;
+    }
+    &__td2{
+        width: 66px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $white;
+    }
+    &__td3{
+        width: 152px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $white;
+    }
+    &__td4{
+        width: 151px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $white;
+    }
+    &__td5{
+        width: 152px;font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $white;
+    }
+    &__td6{
+        width: 151px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $white;
+    }
+    &__td7{
+        width: 152px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $white;
+    }
+    &__td8{
+        width: 154px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 16px;
+        color: $white;
+    }
+    &__tdtext{
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 16px;
+        text-align: start;
+        padding-left: 30px;
+    }
+}
+
+.section-three{
+    padding: 32px 0 73px 0;
+    display: flex;
+    justify-content: space-between;
+    &__description{
+        padding-right: 34px;
+        P{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 6px;
+        }
+    }
+}
+
+.price-bottomtext{
+    padding-top: 48px;
+}
+
+.form-price{
+    padding-top: 77px;
+}

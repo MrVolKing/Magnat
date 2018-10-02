@@ -1,0 +1,110 @@
+.title-gallery{
+    padding: 47px 0 57px 0;
+}
+
+.gallerycontent{
+    display: flex;
+    justify-content: space-between;
+    &__title{
+        margin-bottom: 60px;
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    &__left{
+        width: 75%;
+    }
+}
+
+.gallery{
+    .my-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .grid-item{
+        width: 267px;
+        height: 195px;
+        margin-bottom: 29px;
+        border: 2px solid #585858;
+        overflow: hidden;
+        position: static !important;
+        img{
+            width: auto;
+            height: auto;
+        }
+    }
+}
+
+.timer{
+    position: relative;
+    width: 270px;
+    // height: 397px;
+    background-color: #2f2f2f;
+    padding: 18px 18px 41px 18px;
+    margin-bottom: 58px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title{
+        text-align: center;
+        margin-bottom: 12px;
+        p{
+            font-size: 24px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+    &__blockimg{
+        width: 234px;
+        height: 145px;
+        overflow: hidden;
+        position: relative;
+        border: 2px solid #585858;
+        img{
+            position: absolute;
+            left: -55px;
+        }
+    }
+    &__description{
+        text-align: center;
+        margin: 11px 0 8px 0;
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+            color: $white;
+        }
+    }
+    &__time{
+        span{
+            font-size: 40px;
+            font-weight: 800;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+    &__blockbutton{
+        position: absolute;
+        bottom: -24px;
+        button{
+            width: 235px;
+            height: 59px;
+            border: 2px solid #cbaa45;
+            background-color: #c7a948;
+            span{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 16px;
+                color: $white;
+            }
+        }
+    }
+}
+
+.navigations-gallery{
+    padding: 7px 0 62px 0;
+}

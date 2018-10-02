@@ -1,0 +1,93 @@
+extends ../template
+
+block varibles
+    - var title = "About"
+
+block content
+   
+    .content
+        include ../common/header.pug  
+
+        section.title-faq                 
+            .wrapper
+                .titleblock
+                    .title 
+                        span Часто задаваемые вопросы
+                .wayblock
+                    .way
+                        a(href="./index.html") Главная  
+                        div &gt; 
+                        span FAQ
+
+        section
+            .wrapper
+                .faqcontent
+                    .faqcontent__left
+                        .faqcontent__description
+                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.  
+                            p Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. 
+                        .faqcontent__blockblocks
+                            .blockitem
+                                .blockitem__top#top1
+                                    .blockitem__title
+                                        p Чем отличаются каркасные дома от sip?
+                                    .blockitem__blockimg
+                                        img.img1#imgplus1(src="./images/+.png", alt="")
+                                        img.img2.hidden#imgminus1(src="./images/-.png", alt="")
+                                .blockitem__bottom.hidden#bottom1
+                                    .blockitem__text    
+                                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                            .blockitem
+                                .blockitem__top#top1
+                                    .blockitem__title
+                                        p Какой фундамент больше всего подходит для каркасного дома?
+                                    .blockitem__blockimg
+                                        img.img1#imgplus1(src="./images/+.png", alt="")
+                                        img.img2.hidden#imgminus1(src="./images/-.png", alt="")
+                                .blockitem__bottom.hidden#bottom1
+                                    .blockitem__text    
+                                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                            .blockitem
+                                .blockitem__top#top1
+                                    .blockitem__title
+                                        p Каков срок службы каркасного дома?
+                                    .blockitem__blockimg
+                                        img.img1#imgplus1(src="./images/+.png", alt="")
+                                        img.img2.hidden#imgminus1(src="./images/-.png", alt="")
+                                .blockitem__bottom.hidden#bottom1
+                                    .blockitem__text    
+                                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                            .blockitem
+                                .blockitem__top#top1
+                                    .blockitem__title
+                                        p Чем отличаются каркасные дома от sip?
+                                    .blockitem__blockimg
+                                        img.img1#imgplus1(src="./images/+.png", alt="")
+                                        img.img2.hidden#imgminus1(src="./images/-.png", alt="")
+                                .blockitem__bottom.hidden#bottom1
+                                    .blockitem__text    
+                                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                            .blockitem
+                                .blockitem__top#top1
+                                    .blockitem__title
+                                        p Какой фундамент больше всего подходит для каркасного дома?
+                                    .blockitem__blockimg
+                                        img.img1#imgplus1(src="./images/+.png", alt="")
+                                        img.img2.hidden#imgminus1(src="./images/-.png", alt="")
+                                .blockitem__bottom.hidden#bottom1
+                                    .blockitem__text    
+                                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                            .blockitem
+                                .blockitem__top#top1
+                                    .blockitem__title
+                                        p На каком этапе после окончания строительства, можно преступать к отделке дома?
+                                    .blockitem__blockimg
+                                        img.img1#imgplus1(src="./images/+.png", alt="")
+                                        img.img2.hidden#imgminus1(src="./images/-.png", alt="")
+                                .blockitem__bottom.hidden#bottom1
+                                    .blockitem__text    
+                                        p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                    .faqcontent__fight
+                        include ../common/bird.pug
+
+        include ../common/footer.pug

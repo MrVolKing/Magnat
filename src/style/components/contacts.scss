@@ -1,0 +1,50 @@
+.contacts{
+    padding: 55px 0 102px 0;
+    &__content{
+        margin-top: 55px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        width: 49%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__blockitem{
+        width: 50%;
+        display: flex;
+    }
+    &__blockikn{
+        margin-right: 22px;
+    }
+    &__blockinfotitle {
+        margin-bottom: 16px;
+        div{
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 21px;
+        }
+    }
+    &__blocktext{
+        display: flex;
+        flex-direction: column;
+        p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 15.98px;
+        }
+    }
+    &__right{
+        width: 49%;
+    }
+    &__blockmap{
+        width: 570px;
+        height: 436px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 3px solid #c7a948;
+    }
+    
+}

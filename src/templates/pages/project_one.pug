@@ -1,0 +1,133 @@
+extends ../template
+
+block varibles
+    - var title = "Project"
+
+block content
+   
+    .content
+        include ../common/header.pug  
+
+        section.title-project                
+            .wrapper
+                .titleblock
+                    .title 
+                        span Фото выполненных проектов
+                .wayblock
+                    .way
+                        a(href="./index.html") Главная  
+                        div &gt; 
+                        span Фото выполненных проектов
+
+        section
+            .wrapper
+                .projectcontent
+                    .projectcontent__left
+                        .slickslider
+                            .fade.topslidersize
+                                div
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div
+                                    img(src='./images/prijoneslid3.png', alt='')
+                            .nav.botslidersize
+                                div.slid(style="height: 96px;  ")
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div.slid(style="height: 96px;")
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div.slid(style="height: 96px;")
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div.slid(style="height: 96px;")
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div.slid(style="height: 96px;")
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div.slid(style="height: 96px;")
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div.slid(style="height: 96px;")
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div.slid(style="height: 96px;")
+                                    img(src='./images/prijoneslid3.png', alt='')
+                                div.slid(style="height: 96px;")
+                                    img(src='./images/prijoneslid3.png', alt='')
+
+                        .projectcontent__leftdescription
+                            p &#8194;&#8194;Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. 
+                            p &#8194;&#8194;Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами.&#8194;&#8194;  Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. 
+                            p &#8194;&#8194;Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. 
+                        .projectcontent__leftprice
+                            p Цена от 
+                                span
+                                    | 3 582 900 руб.
+                    .projectcontent__right
+                        .projectcontent__top
+                            include ../common/calc.pug
+                            .section-one__blockcallback
+                                a(href="#")
+                                    span Задать вопрос
+                                    div
+                        .projectcontent__bottom
+                            .projectcontent__block1
+                                span Примечание:
+                                p возможны и другие варианты исполнений
+                            .projectcontent__block2
+                                table.table(border="1",bordercolor="#c7a948" cellspacing="0")
+                                    tr.top
+                                        td.bold Этажность
+                                        td.classic 1 этаж
+                                    tr.bot
+                                        td.bold Общая площадь
+                                        td.classic 320 м2
+                                    tr.bot
+                                        td.bold Сроки строительства
+                                        td.classic 90 дней
+                                    tr.bot
+                                        td.bold Жилая площадь
+                                        td.classic 280 м2
+                                    tr.bot
+                                        td.bold Материал строительства
+                                        td.classic каркас
+                                    tr.bot
+                                        td.bold Сезонность строительства
+                                        td.classic круглогодично
+
+        section.form-project_one
+            .wrapper
+                .longstring
+                    img(src="./images/projectslong.png", alt="")
+                include ../common/form.pug
+
+
+            script(type='text/javascript').
+                $('.fade').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: '.nav'
+                });
+                $('.nav').slick({
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                asNavFor: '.fade',
+                dots: true,
+                centerMode: true,
+                focusOnSelect: false
+                });
+
+
+                
+
+        include ../common/footer.pug

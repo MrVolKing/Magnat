@@ -1,0 +1,86 @@
+extends ../template
+
+block varibles
+    - var title = "Contacts"
+
+block content
+   
+    .content
+        include ../common/header.pug
+
+        section.contactscontent
+            .wrapper
+                .contacts
+                    .titleblock
+                        .title 
+                            span Контакты	
+                    .wayblock
+                        .way
+                            a(href="./index.html") Главная
+                            div &gt; 
+                            span Контакты
+                    .contacts__content
+                        .contacts__left
+                            .contacts__blockitem
+                                .contacts__blockikn
+                                    img(src="./images/contactsicon1.png", alt="")
+                                .contacts__blockinfo
+                                    .contacts__blockinfotitle   
+                                        div Адрес:
+                                    .contacts__blocktext
+                                        p Россия, Севастополь
+                                        p ул. Рыбаков 5а, 418
+                            .contacts__blockitem
+                                .contacts__blockikn
+                                    img(src="./images/contactsicon2.png", alt="")
+                                .contacts__blockinfo
+                                    .contacts__blockinfotitle   
+                                        div E-mail:
+                                    .contacts__blocktext
+                                        p magnat.stroy91@yandex.ru
+                            .contacts__blockitem
+                                .contacts__blockikn
+                                    img(src="./images/contactsicon3.png", alt="")
+                                .contacts__blockinfo
+                                    .contacts__blockinfotitle   
+                                        div Телефоны:
+                                    .contacts__blocktext
+                                        p Россия, Севастополь
+                                        p ул. Рыбаков 5а, 418
+                            .contacts__blockitem
+                                .contacts__blockikn
+                                    img(src="./images/contactsicon4.png", alt="")
+                                .contacts__blockinfo
+                                    .contacts__blockinfotitle   
+                                        div WhatsApp:
+                                    .contacts__blocktext
+                                        p Россия, Севастополь
+                                        p ул. Рыбаков 5а, 418
+                            .contacts__blockitem
+                                .contacts__blockikn
+                                    img(src="./images/contactsicon5.png", alt="")
+                                .contacts__blockinfo
+                                    .contacts__blockinfotitle   
+                                        div Часы работы:
+                                    .contacts__blocktext
+                                        p Россия, Севастополь
+                                        p ул. Рыбаков 5а, 418
+                            .contacts__blockitem
+                                .contacts__blockikn
+                                    img(src="./images/contactsicon6.png", alt="")
+                                .contacts__blockinfo
+                                    .contacts__blockinfotitle   
+                                        div Viber:
+                                    .contacts__blocktext
+                                        p Россия, Севастополь
+                                        p ул. Рыбаков 5а, 418              
+                        .contacts__right
+                            .contacts__blockmap
+                                iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2841.943738874292!2d33.43247731551756!3d44.57771967910047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40953cddb3b6cf3d%3A0x18a9fac257592c51!2zNSDRg9C7LiDQoNGL0LHQsNC60L7Qsiwg0KHQtdCy0LDRgdGC0L7Qv9C-0LvRjCA5OTAwMA!5e0!3m2!1sru!2sua!4v1537366023549', width='600', height='450', frameborder='0', style='border:0', allowfullscreen='')
+
+                        
+                   	
+                
+
+
+        include ../common/footer.pug

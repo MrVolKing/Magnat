@@ -1,0 +1,169 @@
+extends ../template
+
+block varibles
+    - var title = "About"
+
+block content
+   
+    .content
+        include ../common/header.pug  
+
+        section.title-about                  
+            .wrapper
+                .titleblock
+                    .title 
+                        span О нас
+                .wayblock
+                    .way
+                        a(href="./index.html") Главная  
+                        div &gt; 
+                        span О нас
+
+        section
+            .wrapper
+                .about-top
+                    .about-top__left
+                        .about-top__blockimg
+                            img(src="./images/aboutfoto1.png", alt="")
+                    .about-top__right
+                        .about-top__blocktext
+                            p &ensp;&ensp;Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. 
+                            p &ensp;&ensp;Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. 
+                            p &ensp;&ensp;Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. 
+        
+        section.sect2
+            .wrapper
+                .minislider
+                    .minislider__content
+                        .minislider__left
+                            .minislider__title
+                                .title 
+                                    span Наше достижение 1
+                            .minislider__text
+                                p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами.
+                            .minislider__blockbutton
+                                a(href="")
+                                    span Получить бесплатную консультацию
+                        .minislider__right
+                            .slider
+                                .swiper-contain
+                                    .swiper-wrapper
+                                        .swiper-slide
+                                            img(src="./images/aboutminislid.png", alt="")
+                                        .swiper-slide
+                                            img(src="./images/aboutminislid.png", alt="")
+                                        .swiper-slide
+                                            img(src="./images/aboutminislid.png", alt="")
+                                        .swiper-slide
+                                            img(src="./images/aboutminislid.png", alt="")
+                                    .swiper-pagination.aboutpagin    
+                                    //- .swiper-button-next 
+                                    //- .swiper-button-prev 
+        
+        section
+            .wrapper        
+                .building
+                    .building__title
+                        .title
+                            span Что мы строим:
+                        img(src="./images/sliderstring.png", alt="")   
+                    .building__blockblocks
+                        .about__blockitem   
+                            .about__imgblock
+                                img(src="./images/build1.png", alt="")
+                            .about__titleblockitem
+                                span Дома, коттеджи,дачи
+                            img.plus.plus_1(src="./images/about_plus.png", alt="")
+                            img.plus.plus_2(src="./images/about_plus.png", alt="")
+                            img.plus.plus_3(src="./images/about_plus.png", alt="")
+                            img.plus.plus_4(src="./images/about_plus.png", alt="")
+                        .about__blockitem   
+                            .about__imgblock
+                                img(src="./images/build1.png", alt="")
+                            .about__titleblockitem
+                                span Гостинницы
+                        .about__blockitem   
+                            .about__imgblock
+                                img(src="./images/build1.png", alt="")
+                            .about__titleblockitem
+                                span Торговые центры
+                            img.plus.plus_1(src="./images/about_plus.png", alt="")
+                            img.plus.plus_2(src="./images/about_plus.png", alt="")
+                            img.plus.plus_3(src="./images/about_plus.png", alt="")
+                            img.plus.plus_4(src="./images/about_plus.png", alt="")
+                        .about__blockitem   
+                            .about__imgblock
+                                img(src="./images/build3.png", alt="")
+                            .about__titleblockitem
+                                span Офисы
+                            img.plus.plus_2(src="./images/about_plus.png", alt="")
+                            img.plus.plus_4(src="./images/about_plus.png", alt="")
+                        .about__blockitem.about__blockitem_pad 
+                            .about__imgblock
+                                img(src="./images/build2.png", alt="")
+                            .about__titleblockitem
+                                span Спортивные комплексы
+                            img.plus.plus_3(src="./images/about_plus.png", alt="")
+                            img.plus.plus_4(src="./images/about_plus.png", alt="")
+                        .about__blockitem   
+                            .about__imgblock
+                                img(src="./images/build1.png", alt="")
+                            .about__titleblockitem
+                                span Детские и школьные учреждения
+                        .about__blockitem   
+                            .about__imgblock
+                                img(src="./images/build4.png", alt="")
+                            .about__titleblockitem
+                                span Промышленные объекты
+                            img.plus.plus_3(src="./images/about_plus.png", alt="")
+                            img.plus.plus_4(src="./images/about_plus.png", alt="")
+                        .about__blockitem.about__blockitem_pad 
+                            .about__imgblock
+                                img(src="./images/build1.png", alt="")
+                            .about__titleblockitem
+                                span Коттеджные поселки
+                            img.plus.plus_4(src="./images/about_plus.png", alt="")
+                    .building__blockbutton
+                        div
+                            a(href="#")
+                                span Смотреть все
+                
+        section.workers-content
+            .wrapper
+                .workers
+                    .workers__content
+                        .workers__left
+                            .workers__blockimg
+                                img(src="./images/workers.png", alt="")
+                        .workers__right
+                            .workers__title
+                                .title
+                                    span Что говорят наши сотрудники?
+                            .workers__text
+                                p “Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами.”
+                            .workers__name
+                                p Алексей Алексеев
+                                p — прораб, опыт работы 17 лет.
+
+
+        section.form-about 
+            .wrapper       
+                include ../common/form.pug
+                .longstring
+                            img(src="./images/projectslong.png", alt="")
+
+        section
+            .wrapper
+                .about-bottomtext
+                    .textwrap#textwrap
+                        .text
+                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+                            p  Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. 
+                        .text.hidden#hidden
+                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.  Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. 
+                        .linbottom
+                            .linbottom__lin#shadow
+                                img(src="./images/newsimgbottom.png", alt="")
+
+                        
+        include ../common/footer.pug

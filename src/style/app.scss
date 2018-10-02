@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+
+
+@import "helpers/varibles.scss";
+@import "mixin/pxem.scss";
+@import "common/wrapper.scss";
+@import "components/header.scss";
+@import "components/mainpage.scss";
+@import "components/footer.scss";
+@import "components/photoswipe.scss";
+@import "components/swiper.scss";
+@import "components/title.scss";
+@import "components/way.scss";
+@import "components/contacts.scss";
+@import "components/news.scss";
+@import "components/navigations.scss";
+@import "components/news_one.scss";
+@import "components/price.scss";
+@import "components/calc.scss"; 
+@import "components/question.scss";
+@import "components/projects.scss";
+@import "components/bottomtext.scss";
+@import "components/form.scss";
+@import "components/materials.scss";
+@import "components/workslider.scss";
+@import "components/about.scss"; 
+@import "components/bird.scss";
+@import "components/projects-page.scss";
+@import "components/faq.scss";
+@import "components/gallery.scss";
+@import "components/project_one.scss";
+
+@font-face {
+    font-family: circe; /* Имя шрифта */
+    src: url(../fonts/Circe-Regular.ttf); // 400
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: circe; /* Имя шрифта */
+    src: url(../fonts/Circe-Bold.ttf); // 700
+    
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: circe; /* Имя шрифта */
+    src: url(../fonts/Circe-ExtraBold.ttf); // 800
+    
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: arkhip; /* Имя шрифта */
+    src: url(../fonts/Arkhip.ttf); // 400
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: yermak; /* Имя шрифта */
+    src: url(../fonts/DSYermak_D.ttf); // 400
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: izhitsa; /* Имя шрифта */
+    src: url(../fonts/IzhitsaC.ttf); // 400
+    
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content{
+    overflow: hidden;
+}
+
+body{
+    position: relative;
+    font-family: circe;
+    color: $maintext;
+}
+
+a{
+    cursor: pointer;
+}
+
+a:hover{
+    color: #cbaa45;
+}
+
+
+
+
+
+
+

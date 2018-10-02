@@ -1,0 +1,91 @@
+.works{
+    &__blocktitle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__title{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 26px;
+        span{
+            font-family: arkhip;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            margin-bottom: 12px;
+        }
+    }
+    &__description{
+        width: 746px;
+        text-align: center;
+        span{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+    }
+    &__sliderblock{
+        padding: 0 38px;
+        position: relative;
+        margin-top: 40px;
+    }
+    &__blockslid{
+        width: 383px;
+        height: 268px;
+        overflow: hidden;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__buttonl{
+        position: absolute;
+        left: 0;
+        transform: translateY(-50%);
+        top: 50%;
+        display: flex;
+    }
+    &__buttonr{
+        position: absolute;
+        right: 0;
+        transform: translateY(-50%);
+        top: 50%;
+        display: flex;
+    }
+    &__imgl{
+        position: absolute;
+        left: -843px;
+    }
+    &__imgr{
+        position: absolute;
+        right: -843px;
+    }
+    &__buttonbottom{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 14px;
+        button{
+            width: 234px;
+            height: 59px;
+            background-color: #cbaa45;
+            border: none;
+            a{
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+            }
+            span{
+                color: $white;
+                font-size: 18px;
+            }
+        }
+    }
+}
+.swiper-slide{
+    overflow: hidden;
+    // margin-right: 12px;
+}

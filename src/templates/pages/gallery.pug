@@ -1,0 +1,167 @@
+extends ../template
+
+block varibles
+    - var title = "Gallery"
+
+block content
+   
+    .content
+        include ../common/header.pug  
+
+        section.title-gallery                  
+            .wrapper
+                .titleblock
+                    .title 
+                        span Фото выполненных проектов
+                .wayblock
+                    .way
+                        a(href="./index.html") Главная  
+                        div &gt; 
+                        span Фото выполненных проектов
+
+        section
+            .wrapper
+                .gallerycontent
+                    .gallerycontent__left
+                        .gallerycontent__title
+                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. 
+                        .gallery    
+                            .my-gallery.grid#gallery(itemscope='', itemtype='')             
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery1.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery1.png', itemprop='thumbnail', alt='Image description')
+                                
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery2.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery2.png', itemprop='thumbnail', alt='Image description')
+
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery3.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery3.png', itemprop='thumbnail', alt='Image description')
+
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery4.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery4.png', itemprop='thumbnail', alt='Image description')
+                                
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery5.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery5.png', itemprop='thumbnail', alt='Image description')
+
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery6.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery6.png', itemprop='thumbnail', alt='Image description')
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery1.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery1.png', itemprop='thumbnail', alt='Image description')
+                                
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery2.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery2.png', itemprop='thumbnail', alt='Image description')
+
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery3.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery3.png', itemprop='thumbnail', alt='Image description')
+
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery4.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery4.png', itemprop='thumbnail', alt='Image description')
+                                
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery5.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery5.png', itemprop='thumbnail', alt='Image description')
+
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery6.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery6.png', itemprop='thumbnail', alt='Image description')
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery1.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery1.png', itemprop='thumbnail', alt='Image description')
+                                
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery2.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery2.png', itemprop='thumbnail', alt='Image description')
+
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery3.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery3.png', itemprop='thumbnail', alt='Image description')
+
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery4.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery4.png', itemprop='thumbnail', alt='Image description')
+                                
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery5.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery5.png', itemprop='thumbnail', alt='Image description')
+
+                                figure.my-gallery__foto1.grid-item(itemprop='associatedMedia', itemscope='', itemtype='http://schema.org/ImageObject')
+                                    a(href='./images/gallery6.png', itemprop='contentUrl', data-size='561x370')
+                                        img(src='./images/gallery6.png', itemprop='thumbnail', alt='Image description')
+                                
+
+                            .pswp(tabindex='-1', role='dialog', aria-hidden='true')
+                                //
+                                    Background of PhotoSwipe.
+                                    It's a separate element, as animating opacity is faster than rgba().
+                                .pswp__bg
+                                // Slides wrapper with overflow:hidden.
+                                .pswp__scroll-wrap
+                                    // Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory.
+                                    // don't modify these 3 pswp__item elements, data is added later on.
+                                    .pswp__container
+                                        .pswp__item
+                                        .pswp__item
+                                        .pswp__item
+                                    // Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed.
+                                    .pswp__ui.pswp__ui--hidden
+                                        .pswp__top-bar
+                                            // Controls are self-explanatory. Order can be changed.
+                                            .pswp__counter
+                                            button.pswp__button.pswp__button--close(title='Close (Esc)')
+                                            button.pswp__button.pswp__button--share(title='Share')
+                                            button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                                            button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                                            // Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR
+                                            // element will get class pswp__preloader--active when preloader is running
+                                            .pswp__preloader
+                                                .pswp__preloader__icn
+                                                    .pswp__preloader__cut
+                                                        .pswp__preloader__donut
+                                        .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+                                            .pswp__share-tooltip
+                                        button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+                                        button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+                                        .pswp__caption
+                                            .pswp__caption__center
+
+                    .gallerycontent__right
+                        .gallerycontent__top
+                            .timer
+                                .timer__title   
+                                    p Сейчас строится:
+                                .timer__blockimg
+                                    img(src="./images/gallery_right.png", alt="")
+                                .timer__description 
+                                    p До конца сдачи проекта осталось
+                                .timer__time
+                                    span 09 : 05 : 12
+                                .timer__blockbutton    
+                                    button  
+                                        span Записаться на просмотр объекта
+
+                        .gallerycontent__bottom
+                            .question.question_
+                                .question__righttitle     
+                                    span Часто задаваемые вопросы:
+                                .question__paragraphitem  
+                                    span.question__paragraphtext Вентиляция в доме
+                                .question__paragraphitem  
+                                    span.question__paragraphtext Виды декоратинвых штукатурок
+                                .question__paragraphitem  
+                                    span.question__paragraphtext Виды сайдинга для отделки дома
+                                .question__img
+                                    img(src="./images/rama.png", alt="")
+        section.navigations-gallery
+            .wrapper
+                include ../common/navigations.pug
+
+        include ../common/footer.pug

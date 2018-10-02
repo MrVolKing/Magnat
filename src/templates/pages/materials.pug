@@ -1,0 +1,553 @@
+extends ../template
+
+block varibles
+    - var title = "Materials"
+
+block content
+   
+    .content
+        include ../common/header.pug  
+
+        section.section-title                  
+            .wrapper
+                .titleblock
+                    .title 
+                        span Из чего мы строим?	
+                .wayblock
+                    .way
+                        a(href="./index.html") Главная  
+                        div &gt; 
+                        a(href="./news.html") Строительство домов
+                        div &gt;
+                        span Материалы
+
+        section
+            .wrapper
+                .nav
+                    .nav__blockblocks
+                        .nav__blockitem.nav__blockitem_1
+                            a(href="#")
+                                span  Кирпич
+                        .nav__blockitem.nav__blockitem_2.active
+                            a(href="#")
+                                span Каркасные дома
+                        .nav__blockitem
+                            a(href="#")
+                                span Из ракушечника
+                        .nav__blockitem
+                            a(href="#")
+                                span  Из газобетона
+                        .nav__blockitem
+                            a(href="#")
+                                span Из пеноблоков
+                        .nav__blockitem
+                            a(href="#")
+                                span Клееный брус
+                    
+        section
+            .wrapper
+                .sectiontop
+                    .sectiontop__left
+                        .materials__shadowblock1
+                        .swiper-contain
+                            .swiper-wrapper
+                                .swiper-slide
+                                    img(src="./images/pricepageimg.png", alt="")
+                                    .price-content__textblock
+                                        .price-content_text
+                                            span Кирпичный дом
+                                        .price-content__text.price-content__text_mrg
+                                            span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                .swiper-slide
+                                    img(src="./images/pricepageimg.png", alt="")
+                                    .price-content__textblock
+                                        .price-content__text
+                                            span Кирпичный дом
+                                        .price-content__text.price-content__text_mrg
+                                            span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                .swiper-slide
+                                    img(src="./images/pricepageimg.png", alt="")
+                                    .price-content__textblock
+                                        .price-content__text
+                                            span Кирпичный дом
+                                        .price-content__text.price-content__text_mrg
+                                            span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                .swiper-slide
+                                    img(src="./images/pricepageimg.png", alt="")
+                                    .price-content__textblock
+                                        .price-content__text
+                                            span Кирпичный дом
+                                        .price-content__text.price-content__text_mrg
+                                            span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                            .swiper-pagination     
+                            //- .swiper-button-next 
+                    .sectiontop__right
+                        include ../common/calc.pug
+                        .section-one__blockcallback
+                            a(href="#")
+                                span Задать вопрос
+                                div
+
+        section
+            .wrapper
+                .secttabl
+                    .secttabl__left
+                        .secttabl__titleblock
+                            .title 
+                                span Сравнительные характеристики товаров:
+                        .secttabl__textblock
+                            p В таблице приведена сравнительная характеристика строительных материалов по 10 бальной шкале. Где 10-самый высокий уровень показателя, а 0 самый низкий уровень показателя. 
+                        .secttabl__tableblock
+                            table.secttabl__table(border="1",bordercolor="#c7a948" cellspacing="0")
+                                tr.secttabl__tr
+                                    td.secttabl__td1 
+                                    td.secttabl__td2 Каркас
+                                    td.secttabl__td3 Кирпич
+                                    td.secttabl__td4 Ракушечник
+                                    td.secttabl__td5 Газобетон
+                                    td.secttabl__td6 Пеноблоки
+                                    td.secttabl__td7 Клееный брус
+                                tr
+                                    td.secttabl__tdtext Экологичность
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                tr
+                                    td.secttabl__tdtext Скорость стр-ва
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                tr
+                                    td.secttabl__tdtext Срок службы
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                tr
+                                    td.secttabl__tdtext Огнеустойчивость
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                tr
+                                    td.secttabl__tdtext Теплоемкость
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                tr
+                                    td.secttabl__tdtext Морозостойкость
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                tr
+                                    td.secttabl__tdtext Звукоизоляция
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                                    td
+                    .secttabl__right 
+                        form.secttabl__formradio
+                            .secttabl__title
+                                span А какой дом хотите построить Вы? 
+                            .secttabl__blockinputs
+                                //- input#1(type="radio" name="materials" value="Каркасный дом")
+                                //- label(for="1") Каркасный дом
+                                //- input#2(type="radio" name="materials" value="Из ракушечника")
+                                //- label(for="2") Из ракушечника
+                                //- input#3(type="radio" name="materials" value="Из газобетона")
+                                //- label(for="3") Из газобетона
+                                //- input#4(type="radio" name="materials" value="Из пеноблоков")
+                                //- label(for="4") Из пеноблоков
+                                //- input#5(type="radio" name="materials" value="Кирпичный")
+                                //- label(for="5") Кирпичный
+                                //- input#6(type="radio" name="materials" value="Клееный брус")
+                                //- label(for="6") Клееный брус
+
+                                label.radio1
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label Каркасный дом
+                                label.radio2
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label Из ракушечника
+                                label.radio1
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label Из газобетона
+                                label.radio2
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label Из пеноблоков
+                                label.radio1
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label Кирпичный
+                                label.radio2
+                                    input(class="radio", type="radio", name="radio-test")
+                                    span.radio-custom
+                                    span.label Клееный брус
+                            .secttabl__blockbutton
+                                button(type="submit")
+                                    span Голосовать!
+        section
+            .wrapper
+                .stages
+                    .stages__left
+                        .stages__titleblock 
+                            .title
+                                span Этапы строительства каркасного дома:
+                        .swiper-contain
+                            .materials__shadowblock2
+                            .swiper-wrapper
+                                .swiper-slide
+                                    img(src="./images/materslider2.png", alt="")
+                                    .price-content__textblock
+                                        .price-content_text
+                                            span Кирпичный дом
+                                        .price-content__text.price-content__text_mrg
+                                            span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                .swiper-slideg
+                                    img(src="./images/materslider2.png", alt="")
+                                    .price-content__textblock
+                                        .price-content__text
+                                            span Кирпичный дом
+                                        .price-content__text.price-content__text_mrg
+                                            span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                .swiper-slide
+                                    img(src="./images/materslider2.png", alt="")
+                                    .price-content__textblock
+                                        .price-content__text
+                                            span Кирпичный дом
+                                        .price-content__text.price-content__text_mrg
+                                            span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                .swiper-slide
+                                    img(src="./images/materslider2.png", alt="")
+                                    .price-content__textblock
+                                        .price-content__text
+                                            span Кирпичный дом
+                                        .price-content__text.price-content__text_mrg
+                                            span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                            .swiper-pagination     
+                            //- .swiper-button-next 
+                    .stages__right
+                        .question.question_materials
+                            .question__righttitle     
+                                span Часто задаваемые вопросы:
+                            .question__paragraphitem  
+                                span.question__paragraphtext Чем отличаются каркасные дома от sip? 
+                            .question__paragraphitem  
+                                span.question__paragraphtext Какой фундамент больше всего подходит для каркасного дома?
+                            .question__paragraphitem  
+                                span.question__paragraphtext Каков срок службы каркасного дома?
+                            .question__paragraphitem  
+                                span.question__paragraphtext На каком этапе после окончания строительства, можно приступать к отделке дома?
+                            .question__paragraphitem  
+                                span.question__paragraphtext С чем связана низкая стоимость строительства каркасных домов, по сравнению с другими материалами?
+                            .question__img
+                                img(src="./images/rama3.png", alt="")
+            
+        section
+            .wrapper
+                .conditions
+                    .conditions__titleblock
+                        .title
+                            span Вам нужно выбрать каркасный дом если:
+                        img(src="./images/materialsstring.png", alt="")
+                    .blockblockstop
+                        .blockblockstop__blockitem
+                            .blockblockstop__number
+                                span 1
+                            .blockblockstop__description
+                                .blockblockstop__title
+                                    span Вам важно энергосбержение
+                                .blockblockstop__text
+                                    span Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил.
+                        .blockblockstop__blockitem
+                            .blockblockstop__number.blockblockstop__number_2
+                                span 2
+                            .blockblockstop__description
+                                .blockblockstop__title
+                                    span У вас ограниченный бюджете
+                                .blockblockstop__text
+                                    span Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+                        .blockblockstop__blockitem.blockblockstop__blockitem_mrg
+                            .blockblockstop__number.blockblockstop__number_3
+                                span 3
+                            .blockblockstop__description
+                                .blockblockstop__title
+                                    span Необходимо быстрое жилье
+                                .blockblockstop__text
+                                    span Замза обнаружил, что он  превратился в насекомое. За 30 дней.
+                    .blockblocksbottom
+                        .blockblocksbottom__title
+                            .title
+                                span Сроки строительства каркасного дома
+                        .blockblocksbottom__imgtop
+                            img(src="./images/materialslong.png", alt="")
+                        .blockblocksbottom__blockblocks
+                            .blockblocksbottom__blockitem
+                                .blockblocksbottom__title1
+                                    span Фундамент
+                                .blockblocksbottom__img
+                                    img(src="./images/materials1.png", alt="")
+                                .blockblocksbottom__title2
+                                    span 10 дней
+                            .blockblocksbottom__blockitem
+                                .blockblocksbottom__title1
+                                    span Каркас
+                                .blockblocksbottom__img
+                                    img(src="./images/materials2.png", alt="")
+                                .blockblocksbottom__title2
+                                    span 12 дней
+                            .blockblocksbottom__blockitem
+                                .blockblocksbottom__title1
+                                    span Кровля
+                                .blockblocksbottom__img
+                                    img(src="./images/materials3.png", alt="")
+                                .blockblocksbottom__title2
+                                    span 6 дней
+                            .blockblocksbottom__blockitem
+                                .blockblocksbottom__title1
+                                    span Окна и двери
+                                .blockblocksbottom__img
+                                    img(src="./images/materials4.png", alt="")
+                                .blockblocksbottom__title2
+                                    span 3 дня
+                            .blockblocksbottom__blockitem
+                                .blockblocksbottom__title1
+                                    span Отделка
+                                .blockblocksbottom__img
+                                    img(src="./images/materials5.png", alt="")
+                                .blockblocksbottom__title2
+                                    span 7 дней
+        section.workslider-content
+            .wrapper
+                .workslider
+                    .works
+                        .works__blocktitle
+                            .works__title
+                                span Выполненные работы
+                                img(src="./images/sliderstring.png", alt="") 
+                            .works__description
+                                span Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+                        .works__sliderblock
+                            .works__imgl
+                                img(src="./images/imgl.png", alt="")
+                            .works__imgr
+                                img(src="./images/imgr.png", alt="")
+                            .swiper-container
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        .works__blockslid
+                                            img(src="./images/slid1.png", alt="")
+                                    .swiper-slide
+                                        .works__blockslid
+                                            img(src="./images/slid2.png", alt="")
+                                    .swiper-slide
+                                        .works__blockslid
+                                            img(src="./images/slid3.png", alt="")
+                                    .swiper-slide
+                                        .works__blockslid
+                                            img(src="./images/slid1.png", alt="")
+                                    .swiper-slide
+                                        .works__blockslid
+                                            img(src="./images/slid2.png", alt="")
+                                    .swiper-slide
+                                        .works__blockslid
+                                            img(src="./images/slid3.png", alt="")
+                                    .swiper-slide
+                                        .works__blockslid
+                                            img(src="./images/slid1.png", alt="")
+                                    .swiper-slide
+                                        .works__blockslid
+                                            img(src="./images/slid2.png", alt="")
+                                    .swiper-slide
+                                        .works__blockslid
+                                            img(src="./images/slid3.png", alt="")
+                            .works__buttonblock
+                                .works__buttonl.swiper-button-pre(tabindex="3")
+                                    img(src="./images/l.png", alt="")
+                                .works__buttonr.swiper-button-nex
+                                    img(src="./images/r.png", alt="")
+                        .works__buttonbottom
+                            button.works__button
+                                a(href="#")
+                                    span Посмотреть все
+        section
+            .wrapper
+                .materiaprojects
+                    .projects
+                        .projects__titleblock
+                            span Проекты каркасных домов
+                            img(src="./images/sliderstring.png", alt="")
+                        .projects__blockblocks
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project1.png", alt="")
+                                .projects__title
+                                    span Одноэтажный кирпичный дом, № W-209-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 1 этаж, габариты: 19.14 х 21.99 м
+                                    .projects__textprice
+                                        div 31 200 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project2.png", alt="")
+                                .projects__title
+                                    span Дом из крупноформатных блоков RAUF, № O-203-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 2 этажа, габариты: 10.5 х 10.5 м
+                                    .projects__textprice
+                                        div 42 510 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project3.png", alt="")
+                                .projects__title
+                                    span Одноэтажный кирпичный дом, № W-209-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 1 этаж, габариты: 19.14 х 21.99 м
+                                    .projects__textprice
+                                        div 32 900 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project1.png", alt="")
+                                .projects__title
+                                    span Одноэтажный кирпичный дом, № W-209-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 1 этаж, габариты: 19.14 х 21.99 м
+                                    .projects__textprice
+                                        div 31 200 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project2.png", alt="")
+                                .projects__title
+                                    span Дом из крупноформатных блоков RAUF, № O-203-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 2 этажа, габариты: 10.5 х 10.5 м
+                                    .projects__textprice
+                                        div 42 510 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project3.png", alt="")
+                                .projects__title
+                                    span Одноэтажный кирпичный дом, № W-209-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 1 этаж, габариты: 19.14 х 21.99 м
+                                    .projects__textprice
+                                        div 32 900 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                        //- .projects__blockbutton
+                        //-     div
+                        //-         a(href="#")
+                        //-             span Посмотреть все
+                        //- .projects__longstring
+                        //-     img(src="./images/projectslong.png", alt="")
+        section
+            .wrapper
+                .materials-bottomtext
+                    .textwrap#textwrap
+                        .text
+                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+                            p  Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. 
+                        .text.hidden#hidden
+                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.  Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. 
+                        .linbottom
+                            .linbottom__lin#shadow
+                                img(src="./images/newsimgbottom.png", alt="")
+
+
+        section.form-materials 
+            .wrapper       
+                include ../common/form.pug
+                        
+        include ../common/footer.pug

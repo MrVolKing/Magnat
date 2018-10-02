@@ -1,0 +1,380 @@
+extends ../template
+
+block varibles
+    - var title = "Main"
+
+block content
+   
+    .content
+        include ../common/header.pug
+
+        stction.pricecontent
+            .wrapper
+                .price
+                    .price__left
+                        .price__shadowblock
+                        .swiper-contain
+                            .swiper-wrapper 
+                                .swiper-slide
+                                    //- .price__leftimg
+                                    img(src="./images/priceimg.png", alt="")
+                                    .price__textblock
+                                        .price__text
+                                            span Строительство коттеджей любой сложности!
+                                        .price__text.price__text_mrg
+                                            span Далеко-далеко за словесными горами.
+                                .swiper-slide
+                                    //- .price__leftimg
+                                    img(src="./images/priceimg.png", alt="")
+                                    .price__textblock
+                                        .price__text
+                                            span Строительство коттеджей любой сложности!
+                                        .price__text.price__text_mrg
+                                            span Далеко-далеко за словесными горами.
+                                .swiper-slide
+                                    //- .price__leftimg
+                                    img(src="./images/priceimg.png", alt="")
+                                    .price__textblock
+                                        .price__text
+                                            span Строительство коттеджей любой сложности!
+                                        .price__text.price__text_mrg
+                                            span Далеко-далеко за словесными горами.
+                                .swiper-slide
+                                    //- .price__leftimg
+                                    img(src="./images/priceimg.png", alt="")
+                                    .price__textblock
+                                        .price__text
+                                            span Строительство коттеджей любой сложности!
+                                        .price__text.price__text_mrg
+                                            span Далеко-далеко за словесными горами.
+                                
+                            
+                            .swiper-pagination     
+                            //- .swiper-button-next 
+        
+                    .price__right
+                        include ../common/calc.pug
+
+        srction.aboutcontent
+            .wrapper
+                .about
+                    .about__left
+                        .about__blocktitle  
+                            span Из чего мы строим?
+                            img(src="./images/aboutstring.png", alt="")
+                        .about__blockblocks
+                            .about__blockitem   
+                                .about__imgblock
+                                    img(src="./images/about1.png", alt="")
+                                .about__titleblockitem
+                                    span Ракушечник
+                            .about__blockitem   
+                                .about__imgblock
+                                    img(src="./images/about2.png", alt="")
+                                .about__titleblockitem
+                                    span Газобетон
+                            .about__blockitem   
+                                .about__imgblock
+                                    img(src="./images/about3.png", alt="")
+                                .about__titleblockitem
+                                    span Каркасный
+                            .about__blockitem   
+                                .about__imgblock
+                                    img(src="./images/about4.png", alt="")
+                                .about__titleblockitem
+                                    span Пеноблок
+                            .about__blockitem   
+                                .about__imgblock
+                                    img(src="./images/about5.png", alt="")
+                                .about__titleblockitem
+                                    span Каменный
+                            .about__blockitem.about__blockitem_pad 
+                                .about__imgblock
+                                    img(src="./images/about6.png", alt="")
+                                .about__titleblockitem
+                                    span Кирпич
+                    .about__right
+                        .about__top
+                            include ../common/bird.pug
+                        .about__bottom
+                            .about__bottomblockimg
+                                img(src="./images/aboutfoto.png", alt="")
+                            .about__bottomtopblock
+                                span популярный проект
+                            .about__bottom2block
+                                span.about__bottom2text Дом 0-24
+                                span.about__bottom2text.about__bottom2text_mrg Популярный проект дома из камня. Удобная планировка. практичное архитектурное решение. Обычная комната, мирно покоилась в своих четырех хорошо знакомых стенах.
+
+        section.advantagescontent
+            .wrapper
+                .advantages
+                    .advantages__top
+                        .advantages__left
+                            .advantages__blocktitle
+                                span Наши преимущества
+                                img(src="./images/aboutstring.png", alt="")
+                            .advantages__blockblocks
+                                .advantages__blockitem  
+                                    .advantages__imgblock
+                                    img(src="./images/advantagesicon1.png", alt="")
+                                    .advantages__titleblockitem
+                                        span Экономичность
+                                    .advantages__descriptionblock
+                                        span Проснувшись однажды утром после беспокойного сна.
+                                .advantages__blockitem  
+                                    .advantages__imgblock
+                                    img(src="./images/advantagesicon2.png", alt="")
+                                    .advantages__titleblockitem
+                                        span Экологичность
+                                    .advantages__descriptionblock
+                                        span Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+                                .advantages__blockitem 
+                                    .advantages__imgblock
+                                    img(src="./images/advantagesicon3.png", alt="")
+                                    .advantages__titleblockitem
+                                        span Идеально ровные стены
+                                    .advantages__descriptionblock
+                                        span Проснувшись однажды утром после беспокойного сна.
+
+                        .advantages__right
+                            .question__img
+                                    img(src="./images/rama.png", alt="")
+                            .question
+                                .question__righttitle     
+                                    span Часто задаваемые вопросы:
+                                .question__paragraphitem  
+                                    span.question__paragraphtext Вентиляция в доме 
+                                    div
+                                .question__paragraphitem  
+                                    span.question__paragraphtext Виды декоратинвых штукатурок 
+                                    div
+                                .question__paragraphitem  
+                                    span.question__paragraphtext Виды сайдинга для отделки дома
+                                    div
+                                
+                    .advantages__bottom 
+                        .advantages__bottomblockitem
+                            .advantages__blockimg
+                                img(src="./images/advantages1.png", alt="") 
+                            .advantages__description
+                                span.advantages__descriptiontext Наше достижение
+                                span.advantages__descriptiontext.advantages__descriptiontext_size Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил.
+                            .advantages__blockicon
+                                img(src="./images/advantagesicon4.png", alt="")
+                        .advantages__bottomblockitem
+                            .advantages__blockimg
+                                img(src="./images/advantages2.png", alt="") 
+                            .advantages__description
+                                span.advantages__descriptiontext Второе достижение
+                                span.advantages__descriptiontext.advantages__descriptiontext_size Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+                            .advantages__blockicon
+                                img(src="./images/advantagesicon4.png", alt="")
+                        .advantages__bottomblockitem
+                            .advantages__blockimg
+                                img(src="./images/advantages3.png", alt="") 
+                            .advantages__description
+                                span.advantages__descriptiontext И третье
+                                span.advantages__descriptiontext.advantages__descriptiontext_size Замза обнаружил, что он  превратился в насекомое.
+
+        section.workscontent    
+            .wrapper
+                .works
+                    .works__blocktitle
+                        .works__title
+                            span Выполненные работы
+                            img(src="./images/sliderstring.png", alt="") 
+                        .works__description
+                            span Проснувшись однажды утром после беспокойного сна, Грегор Замза обнаружил, что он у себя в постели превратился в страшное насекомое.
+                    .works__sliderblock
+                        .works__imgl
+                            img(src="./images/imgl.png", alt="")
+                        .works__imgr
+                            img(src="./images/imgr.png", alt="")
+                        .swiper-container
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .works__blockslid
+                                        img(src="./images/slid1.png", alt="")
+                                .swiper-slide
+                                    .works__blockslid
+                                        img(src="./images/slid2.png", alt="")
+                                .swiper-slide
+                                    .works__blockslid
+                                        img(src="./images/slid3.png", alt="")
+                                .swiper-slide
+                                    .works__blockslid
+                                        img(src="./images/slid1.png", alt="")
+                                .swiper-slide
+                                    .works__blockslid
+                                        img(src="./images/slid2.png", alt="")
+                                .swiper-slide
+                                    .works__blockslid
+                                        img(src="./images/slid3.png", alt="")
+                                .swiper-slide
+                                    .works__blockslid
+                                        img(src="./images/slid1.png", alt="")
+                                .swiper-slide
+                                    .works__blockslid
+                                        img(src="./images/slid2.png", alt="")
+                                .swiper-slide
+                                    .works__blockslid
+                                        img(src="./images/slid3.png", alt="")
+                        .works__buttonblock
+                            .works__buttonl.swiper-button-pre(tabindex="3")
+                                img(src="./images/l.png", alt="")
+                            .works__buttonr.swiper-button-nex
+                                img(src="./images/r.png", alt="")
+                    .works__buttonbottom
+                        button.works__button
+                            a(href="#")
+                                span Посмотреть все
+                
+        section.projectscontent
+            .wrapper
+                .projectsmain
+                    .projects
+                        .projects__titleblock
+                            span Типовые проекты
+                            img(src="./images/sliderstring.png", alt="")
+                        .projects__blockblocks
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project1.png", alt="")
+                                .projects__title
+                                    span Одноэтажный кирпичный дом, № W-209-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 1 этаж, габариты: 19.14 х 21.99 м
+                                    .projects__textprice
+                                        div 31 200 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project2.png", alt="")
+                                .projects__title
+                                    span Дом из крупноформатных блоков RAUF, № O-203-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 2 этажа, габариты: 10.5 х 10.5 м
+                                    .projects__textprice
+                                        div 42 510 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project3.png", alt="")
+                                .projects__title
+                                    span Одноэтажный кирпичный дом, № W-209-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 1 этаж, габариты: 19.14 х 21.99 м
+                                    .projects__textprice
+                                        div 32 900 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project1.png", alt="")
+                                .projects__title
+                                    span Одноэтажный кирпичный дом, № W-209-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 1 этаж, габариты: 19.14 х 21.99 м
+                                    .projects__textprice
+                                        div 31 200 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project2.png", alt="")
+                                .projects__title
+                                    span Дом из крупноформатных блоков RAUF, № O-203-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 2 этажа, габариты: 10.5 х 10.5 м
+                                    .projects__textprice
+                                        div 42 510 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                            .projects__blockitem
+                                .projects__blockimg
+                                    img(src="./images/project3.png", alt="")
+                                .projects__title
+                                    span Одноэтажный кирпичный дом, № W-209-1K
+                                .projects__blocktext
+                                    .projects__text
+                                        div
+                                            span Площадь:
+                                            |  208.8 м2
+                                    .projects__text
+                                        div 
+                                            span Материал:
+                                            | кирпич
+                                    .projects__text
+                                        div 1 этаж, габариты: 19.14 х 21.99 м
+                                    .projects__textprice
+                                        div 32 900 руб.
+                                .projects__button
+                                    a(href="./project_one.html")
+                                        span Подробнее
+                        .projects__longstring
+                            img(src="./images/projectslong.png", alt="")
+
+                section.form-main
+                    include ../common/form.pug
+        include ../common/footer.pug
+
+
+        
+        
+
+
+
+
+        

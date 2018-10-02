@@ -1,0 +1,189 @@
+.hoadercontent{
+    .wrapper{
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.header{
+    &__top{
+        border-top: 3px solid #c29d46;
+        border-bottom: 4px solid $bordercolor;
+        padding: 27px 0 16px 0;
+        position: relative;
+    }
+    &__imgl{
+        position: absolute;
+        left: -843px;
+        top: -160px;
+    }
+    &__imgr{
+        position: absolute;
+        right: -843px;
+        top: -160px;
+    }
+    &__centr{
+        display: flex;
+        justify-content: center;
+    }
+    &__logoblock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            font-size: 42px;
+            font-family: "izhitsa";
+            color:$maintext;
+            font-weight: 400;
+            span{
+                color: $bordercolor;
+                font-family: "yermak";
+            }
+        }
+    }
+    &__rght{
+        position: relative;
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: -50px;
+        span{
+            color: #2f2f2f;
+            font-family: "Circe - Extra Bold";
+            font-size: 30px;
+            font-weight: 800;
+            line-height: 22.01px;
+        }
+        a{
+            color: #262626;
+            font-size: 16p;
+        }
+    }
+    &__bottom{
+        border-bottom: 4px solid $bordercolor;
+        padding: 5px 0 7px 0; 
+    }
+    &__contentbottom{
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        a{
+            font-size: 18px;
+            color: #333333;
+            text-decoration: none;
+        }
+    }
+    &__call{
+        width: 349px;
+        height: 57px;
+        background-color: $bordercolor;
+        margin-left: 26px;
+        padding: 10px 18px 9px 21px;
+        display: flex;
+        cursor: pointer;
+        span{
+            color: $white;
+            font-size: 18px;
+            font-weight: 800;
+            line-height: 20px;
+        }
+        img{
+            width: 24px;
+            height: 33px;
+        }
+    }
+}
+
+
+.btnadapt{
+    width: 46px;
+    position: absolute;
+    right: 30px;
+    display: none;
+}
+
+
+// adapt menu
+
+.adaptmenu{
+    display: none;
+    width: 55vw;
+    background-color: white;
+    height: 78vh;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    right: 0;
+    &__paragraph{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 80px;
+        .close{
+            background: url(../images/closed.png) center/100% no-repeat;
+            width: 26px;
+            height: 26px;
+            background-color: gray;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    }
+}
+
+
+@media all and (max-width: 1240px) {
+    .header{
+        &__rght{
+            align-items: center;
+            margin-top: 16px;
+            width: 100%;
+        }
+        &__imgl, &__imgr{
+            display: none;
+        }
+        &__contentbottom{
+            width: 95vw;
+        }
+    }
+}
+
+@media all and (max-width: 980px) {
+    .header{
+        &__call{
+            display: none;
+        }
+    }
+}
+
+@media all and (max-width: 660px) {
+    .header{
+        &__bottom{
+            display: none;
+        }
+    }
+
+    // adaptmenu visibl
+}
+
+@media all and (max-width: 350px) {
+    .header{
+        &__logoblock{
+            div{
+                font-size: 36px;
+            }
+        }
+    }
+    .btnadapt{
+        right: 15px;
+    }
+}

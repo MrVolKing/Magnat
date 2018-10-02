@@ -1,0 +1,125 @@
+.title-project {
+    padding: 47px 0 57px 0;
+}
+
+.projectcontent{
+    display: flex;
+    justify-content: space-between;
+    &__left{
+        width: 74%;
+        // .slickslider{
+        //     width: 870px;
+        //     height: 590px;
+        // }
+    }
+    &__leftdescription{
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 6px;
+        }
+    }
+    &__leftprice{
+        margin-top: 52px;
+        p{
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 22px;
+            color: #262626;
+            span{
+                color: #cbaa45;
+            }
+        }
+    }
+    &__top{
+        .section-one__blockcallback{
+            margin-top: 15px;
+        }
+    }
+    &__bottom{
+        margin-top: 16px;
+    }
+    &__block1{
+        width: 270px;
+        height: 98px;
+        border: 1px solid #c7a948;
+        text-align: center;
+        padding: 14px 42px 14px 42px;
+        line-height: 24px;
+        margin-bottom: 16px;
+        span{
+            font-size: 18px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    &__block2{
+        .table{
+            width: 271px;
+            height: 326px;
+            border: 4px solid #c7a948;
+        }
+        .bold{
+            width: 139px;
+            padding-left: 15px;
+            padding-right: 10px;
+            font-size: 16px;
+            font-weight: 800;
+            line-height: 16px;
+        }
+        .classic{
+            width: 132px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 16.01px;
+            text-align: center;
+        }
+        .top{
+            height: 57px;
+        }
+        .bot{
+            height: 52px;
+        }
+    }
+}
+
+
+.form-project_one{
+    padding: 63px 0 96px 0;
+    .longstring{
+        margin-bottom: 55px;
+    }
+}
+
+
+// slider
+
+.topslidersize{
+    width: 870px;
+    height: 461px;
+    border: 4px solid #c7a948;
+    overflow: hidden;
+}
+
+.botslidersize{
+    height: 142px;
+    padding: 0 25px;
+    // width: 821px;
+    overflow: hidden;
+    position: relative !important;
+    // margin: 0 auto;
+    display: flex  !important;
+    align-items: center !important;
+    justify-content: center !important;
+    div{
+        .slid{
+            margin: 0 8px;
+            overflow: hidden;
+            width: 146px !important;
+        }
+    }
+}

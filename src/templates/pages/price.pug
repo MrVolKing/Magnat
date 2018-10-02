@@ -1,0 +1,307 @@
+extends ../template
+
+block varibles
+    - var title = "Price"
+
+block content
+   
+    .content
+        include ../common/header.pug  
+        .pricecontent                     
+            .wrapper
+                .price-content
+                    .titleblock
+                        .title 
+                            span Наши цены
+                    .wayblock
+                        .way
+                            a(href="./index.html") Главная
+                            div &gt; 
+                            span Цены
+                    section.section-one
+                        .section-one__left
+                            .pricepage__shadowblock
+                            .swiper-contain
+                                .swiper-wrapper
+                                    .swiper-slide
+                                        //- .price__leftimg
+                                        img(src="./images/pricepageimg.png", alt="")
+                                        .price-content__textblock
+                                            .price-content_text
+                                                span Кирпичный дом
+                                            .price-content__text.price-content__text_mrg
+                                                span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                    .swiper-slide
+                                        //- .price__leftimg
+                                        img(src="./images/pricepageimg.png", alt="")
+                                        .price-content__textblock
+                                            .price-content__text
+                                                span Кирпичный дом
+                                            .price-content__text.price-content__text_mrg
+                                                span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                    .swiper-slide
+                                        //- .price__leftimg
+                                        img(src="./images/pricepageimg.png", alt="")
+                                        .price-content__textblock
+                                            .price-content__text
+                                                span Кирпичный дом
+                                            .price-content__text.price-content__text_mrg
+                                                span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                    .swiper-slide
+                                        //- .price__leftimg
+                                        img(src="./images/pricepageimg.png", alt="")
+                                        .price-content__textblock
+                                            .price-content__text
+                                                span Кирпичный дом
+                                            .price-content__text.price-content__text_mrg
+                                                span Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                                    
+                                
+                                .swiper-pagination     
+                                //- .swiper-button-next 
+                        .section-one__right
+                            include ../common/calc.pug
+                            .section-one__blockcallback
+                                a(href="#")
+                                    span Задать вопрос
+                                    div
+                                
+                    section.section-table
+                        table.section-table__table(border="1",bordercolor="#c7a948" cellspacing="0")
+                            tr.section-table__tr
+                                td.section-table__td1 
+                                td.section-table__td2 Этаж
+                                td.section-table__td3 Каркас
+                                td.section-table__td4 Кирпич
+                                td.section-table__td5 Ракушечник
+                                td.section-table__td6 Газобетон
+                                td.section-table__td7 Пеноблоки
+                                td.section-table__td8 Клееный брус
+                            tr
+                                td.section-table__tdtext(rowspan="2") Эконом
+                                td 2
+                                td 3
+                                td 4
+                                td 5
+                                td 6
+                                td 7
+                                td 8
+                            tr
+                                td 9
+                                td 10
+                                td 11
+                                td 12
+                                td 13
+                                td 14
+                                td 15
+                            
+                            tr
+                                td.section-table__tdtext(rowspan="2") Стандарт
+                                td 17
+                                td 18
+                                td 19
+                                td 20
+                                td 21
+                                td 22
+                                td 23
+                            tr
+                                td 24
+                                td 25
+                                td 26
+                                td 27
+                                td 28 
+                                td 29
+                                td 30 
+                                
+                            tr
+                                td.section-table__tdtext(rowspan="2")  Люкс
+                                td 32
+                                td 33
+                                td 34 
+                                td 35
+                                td 36
+                                td 37
+                                td 38
+                            tr
+                                td 39
+                                td 40 
+                                td 41
+                                td 42
+                                td 43
+                                td 44
+                                td 45
+                    section.section-three
+                        .section-three__left
+                            .section-three__description
+                                p  &#8194;&#8194;Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. 
+                                p &#8194;&#8194;Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. 
+                                p &#8194;&#8194;Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. 
+                                p &#8194;&#8194;Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну».
+                        .section-three__right
+                            .question.question_price
+                                .question__righttitle     
+                                    span Часто задаваемые вопросы:
+                                .question__paragraphitem  
+                                    span.question__paragraphtext Чем отличаются каркасные дома от sip? 
+                                .question__paragraphitem  
+                                    span.question__paragraphtext Какой фундамент больше всего подходит для каркасного дома?
+                                .question__paragraphitem  
+                                    span.question__paragraphtext Каков срок службы каркасного дома?
+                                .question__img
+                                    img(src="./images/rama2.png", alt="")
+                    section.section-projects
+                        .projects
+                            .projects__titleblock
+                                span Проекты каркасных домов
+                                img(src="./images/sliderstring.png", alt="")
+                            .projects__blockblocks
+                                .projects__blockitem
+                                    .projects__blockimg
+                                        img(src="./images/project1.png", alt="")
+                                    .projects__title
+                                        span Одноэтажный кирпичный дом, № W-209-1K
+                                    .projects__blocktext
+                                        .projects__text
+                                            div
+                                                span Площадь:
+                                                |  208.8 м2
+                                        .projects__text
+                                            div 
+                                                span Материал:
+                                                | кирпич
+                                        .projects__text
+                                            div 1 этаж, габариты: 19.14 х 21.99 м
+                                        .projects__textprice
+                                            div 31 200 руб.
+                                    .projects__button
+                                        a(href="./project_one.html")
+                                            span Подробнее
+                                .projects__blockitem
+                                    .projects__blockimg
+                                        img(src="./images/project2.png", alt="")
+                                    .projects__title
+                                        span Дом из крупноформатных блоков RAUF, № O-203-1K
+                                    .projects__blocktext
+                                        .projects__text
+                                            div
+                                                span Площадь:
+                                                |  208.8 м2
+                                        .projects__text
+                                            div 
+                                                span Материал:
+                                                | кирпич
+                                        .projects__text
+                                            div 2 этажа, габариты: 10.5 х 10.5 м
+                                        .projects__textprice
+                                            div 42 510 руб.
+                                    .projects__button
+                                        a(href="./project_one.html")
+                                            span Подробнее
+                                .projects__blockitem
+                                    .projects__blockimg
+                                        img(src="./images/project3.png", alt="")
+                                    .projects__title
+                                        span Одноэтажный кирпичный дом, № W-209-1K
+                                    .projects__blocktext
+                                        .projects__text
+                                            div
+                                                span Площадь:
+                                                |  208.8 м2
+                                        .projects__text
+                                            div 
+                                                span Материал:
+                                                | кирпич
+                                        .projects__text
+                                            div 1 этаж, габариты: 19.14 х 21.99 м
+                                        .projects__textprice
+                                            div 32 900 руб.
+                                    .projects__button
+                                        a(href="./project_one.html")
+                                            span Подробнее
+                                .projects__blockitem
+                                    .projects__blockimg
+                                        img(src="./images/project1.png", alt="")
+                                    .projects__title
+                                        span Одноэтажный кирпичный дом, № W-209-1K
+                                    .projects__blocktext
+                                        .projects__text
+                                            div
+                                                span Площадь:
+                                                |  208.8 м2
+                                        .projects__text
+                                            div 
+                                                span Материал:
+                                                | кирпич
+                                        .projects__text
+                                            div 1 этаж, габариты: 19.14 х 21.99 м
+                                        .projects__textprice
+                                            div 31 200 руб.
+                                    .projects__button
+                                        a(href="./project_one.html")
+                                            span Подробнее
+                                .projects__blockitem
+                                    .projects__blockimg
+                                        img(src="./images/project2.png", alt="")
+                                    .projects__title
+                                        span Дом из крупноформатных блоков RAUF, № O-203-1K
+                                    .projects__blocktext
+                                        .projects__text
+                                            div
+                                                span Площадь:
+                                                |  208.8 м2
+                                        .projects__text
+                                            div 
+                                                span Материал:
+                                                | кирпич
+                                        .projects__text
+                                            div 2 этажа, габариты: 10.5 х 10.5 м
+                                        .projects__textprice
+                                            div 42 510 руб.
+                                    .projects__button
+                                        a(href="./project_one.html")
+                                            span Подробнее
+                                .projects__blockitem
+                                    .projects__blockimg
+                                        img(src="./images/project3.png", alt="")
+                                    .projects__title
+                                        span Одноэтажный кирпичный дом, № W-209-1K
+                                    .projects__blocktext
+                                        .projects__text
+                                            div
+                                                span Площадь:
+                                                |  208.8 м2
+                                        .projects__text
+                                            div 
+                                                span Материал:
+                                                | кирпич
+                                        .projects__text
+                                            div 1 этаж, габариты: 19.14 х 21.99 м
+                                        .projects__textprice
+                                            div 32 900 руб.
+                                    .projects__button
+                                        a(href="./project_one.html")
+                                            span Подробнее
+                            .projects__blockbutton
+                                div
+                                    a(href="./projects.html")
+                                        span Посмотреть все
+                            .projects__longstring
+                                img(src="./images/projectslong.png", alt="")
+                    
+                    section.price-bottomtext
+                        .textwrap#textwrap
+                            .text
+                                p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+                                p  Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. 
+                            .text.hidden#hidden
+                                p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.  Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. 
+                            .linbottom
+                                .linbottom__lin#shadow
+                                    img(src="./images/newsimgbottom.png", alt="")
+
+                    section.form-price        
+                        include ../common/form.pug
+                        
+                            
+        
+        include ../common/footer.pug
