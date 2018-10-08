@@ -1,9 +1,9 @@
 
-    // var textwrap = document.getElementById('textwrap');
-    // var hidden = document.getElementById('hidden');
-    // var shadow = document.getElementById('shadow');
+    var textwrap = document.getElementById('textwrap');
+    var hidden = document.getElementById('hidden');
+    var shadow = document.getElementById('shadow');
 
-    // textwrap.addEventListener('click', function () { 
-    //     hidden.classList.toggle('hidden');
-    //     shadow.classList.toggle('shadownone');
-    // });
+    textwrap.addEventListener('click', function () { 
+        hidden.classList.toggle('hidden');
+        shadow.classList.toggle('shadownone');
+    });

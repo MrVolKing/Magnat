@@ -14,7 +14,7 @@ header.hoadercontent
                             | Магнат
                             span Ъ 
                             | Строй
-                    .btnadapt   
+                    .btnadapt#btnadapt 
                         svg(xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px"', viewBox='0 0 49 24', enable-background='new 0 0 49 24', xml:space='preserve')
                             path(d='M1.1,3.5C0.5,3.5,0,3,0,2.4V1.7c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M1.1,13.8c-0.6,0-1.1-0.5-1.1-1.1V12c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M16.2,24c-0.6,0-1.1-0.5-1.1-1.1v-0.6c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.6 c0,0.6-0.5,1.1-1.1,1.1H16.2z')
 
@@ -30,7 +30,7 @@ header.hoadercontent
                     .header__menu
                         a(href="./projects.html") Проекты                                                   
                         a(href="./materials.html") Из чего мы строим
-                        a(href="./news.html") Наши услуги 
+                        a(href="./services.html") Наши услуги 
                         a(href="./price.html") Цены
                         a(href="./about.html") О нас
                         a(href="./gallery.html") Фото
@@ -39,14 +39,31 @@ header.hoadercontent
                         span Еще нет земельного участка? Мы подберем!
                         img(src="./images/map.png", alt="")
             
-            .adaptmenu
+            .adaptmenu#adaptmenu
                 .adaptmenu__paragraph
-                    .close
-                    a(href="./projects.html") Проекты                                                   
+                    .close#close
+                    a(href="./index.html") Главная
+                    a(href="./projects.html") Проекты
                     a(href="./materials.html") Из чего мы строим
-                    a(href="./news.html") Наши услуги 
+                    a(href="./services.html") Наши услуги 
                     a(href="./price.html") Цены
                     a(href="./about.html") О нас
                     a(href="./gallery.html") Фото
                     a(href="./contacts.html") Контакты
+                    a(href="./info.html") Блог
+                            
+            script.
+                var btnadapt  = document.getElementById('btnadapt'); 
+                var close = document.getElementById('close');
+                var adaptmenu = document.getElementById('adaptmenu');
+
+                btnadapt.addEventListener('click', function () {
+                    adaptmenu.classList.add('visibladaptmenu');
+                });
+
+                close.addEventListener('click', function () {
+                    adaptmenu.classList.remove('visibladaptmenu');
+                });
+
+                
         

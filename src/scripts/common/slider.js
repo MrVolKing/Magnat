@@ -24,13 +24,20 @@
             nextEl: '.swiper-button-nex',
             prevEl: '.swiper-button-pre',
           },
+          breakpoints: {
+            768: {
+                slidesPerView: 2
+            },
+            580: {
+                slidesPerView: 1
+            }
+        }
       });
 }
 
 
 {
     var swiper = new Swiper('.swiper-contain', {
-        // spaceBetween: 30,
         loop: true,
         slidesPerView: 1,
         pagination: {
@@ -45,6 +52,7 @@
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+        
       });
 }
        

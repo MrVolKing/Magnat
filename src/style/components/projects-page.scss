@@ -2,6 +2,30 @@
     padding: 47px 0 57px 0;
 }
 
+.nav-projects{
+    padding-bottom: 20px;
+    display: flex;
+    // justify-content: space-between;
+    width: 75%;
+    flex-wrap: wrap;
+    a{
+        text-decoration: none;
+        font-size: 18px;
+        color: #2f2f2f;
+        margin: 0 10px;
+        color: gray;
+        margin-bottom: 10px;
+    }
+    .activpage{
+        // text-decoration: underline;
+        color: #2f2f2f;
+        div{
+            width: auto;
+            border-bottom: 2px solid black;
+        }
+    }
+}
+
 .projects-content{
     display: flex;
     justify-content: space-between;
@@ -21,4 +45,40 @@
 .navigations-projects{
     padding-bottom: 62px;
     padding-left: 14px;
+}
+
+
+@media all and (max-width: 1250px) { 
+    .projects-content{
+        margin-bottom: 50px;
+        &__description{
+            text-align: center;
+            padding-right: 16px;
+        }
+    }
+    
+    .navigations-projects{
+        padding-left: 0;
+    }
+}
+
+
+@media all and (max-width: 950px) {
+    .projects-content{
+        flex-direction: column;
+        &__left{
+            width: 100% !important;
+        }
+        &__description{
+            padding-right: 0;
+        }
+        &__right{
+            display: flex;
+            justify-content: center;     
+        }
+    }
+    .nav-projects{
+        width: 100%;
+        justify-content: center;
+    }
 }

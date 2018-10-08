@@ -108,3 +108,46 @@
 .navigations-gallery{
     padding: 7px 0 62px 0;
 }
+
+@media all and (max-width: 1250px) {
+    .gallerycontent{
+        flex-direction: column;
+        &__left{
+            width: 100%;
+        }
+        &__title{
+            text-align: center;
+        }
+        .my-gallery{
+            height: auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        &__right{
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+@media all and (max-width: 570px) {
+    .gallerycontent{
+        &__right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media all and (max-width: 400px) {
+    .title-gallery{
+        padding: 20px 0 20px 0;
+    }
+    .gallerycontent{
+        &__title{
+            margin-bottom: 20px;
+        }
+    }
+}

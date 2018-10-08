@@ -18,6 +18,24 @@ block content
                         a(href="./index.html") Главная  
                         div &gt; 
                         span Проекты
+                    
+        section
+            .wrapper
+                .nav-projects
+                    a(href="#").activpage#link1 Дома до 100м2
+                        div
+                    a(href="#")#link2 Дома 100-150 м2
+                        div
+                    a(href="#")#link3 Дома от 150 м2
+                        div
+                    a(href="#")#link4 Одноэтажные дома
+                        div
+                    a(href="#")#link5 Дома с мансардой
+                        div
+                    a(href="#")#link6 Двухэтажные дома
+                        div
+                    a(href="#")#link7 Дачные дома 
+                        div
 
         section
             .wrapper
@@ -223,3 +241,76 @@ block content
                 include ../common/navigations.pug
 
         include ../common/footer.pug
+
+        script.
+            var link1 = document.getElementById('link1');
+
+            link1.addEventListener('click', function () { 
+                link1.classList.add('activpage');
+                link2.classList.remove('activpage');
+                link3.classList.remove('activpage');
+                link4.classList.remove('activpage');
+                link5.classList.remove('activpage');
+                link6.classList.remove('activpage');
+                link7.classList.remove('activpage');
+            });
+
+            link2.addEventListener('click', function () { 
+                link2.classList.add('activpage');
+                link1.classList.remove('activpage');
+                link3.classList.remove('activpage');
+                link4.classList.remove('activpage');
+                link5.classList.remove('activpage');
+                link6.classList.remove('activpage');
+                link7.classList.remove('activpage');
+            });
+
+            link3.addEventListener('click', function () { 
+                link3.classList.add('activpage');
+                link1.classList.remove('activpage');
+                link2.classList.remove('activpage');
+                link4.classList.remove('activpage');
+                link5.classList.remove('activpage');
+                link6.classList.remove('activpage');
+                link7.classList.remove('activpage');
+            });
+
+            link4.addEventListener('click', function () { 
+                link4.classList.add('activpage');
+                link1.classList.remove('activpage');
+                link3.classList.remove('activpage');
+                link2.classList.remove('activpage');
+                link5.classList.remove('activpage');
+                link6.classList.remove('activpage');
+                link7.classList.remove('activpage');
+            });
+
+            link5.addEventListener('click', function () { 
+                link5.classList.add('activpage');
+                link1.classList.remove('activpage');
+                link3.classList.remove('activpage');
+                link4.classList.remove('activpage');
+                link2.classList.remove('activpage');
+                link6.classList.remove('activpage');
+                link7.classList.remove('activpage');
+            });
+
+            link6.addEventListener('click', function () { 
+                link6.classList.add('activpage');
+                link1.classList.remove('activpage');
+                link3.classList.remove('activpage');
+                link4.classList.remove('activpage');
+                link5.classList.remove('activpage');
+                link2.classList.remove('activpage');
+                link7.classList.remove('activpage');
+            });
+
+            link7.addEventListener('click', function () { 
+                link7.classList.add('activpage');
+                link1.classList.remove('activpage');
+                link3.classList.remove('activpage');
+                link4.classList.remove('activpage');
+                link5.classList.remove('activpage');
+                link6.classList.remove('activpage');
+                link2.classList.remove('activpage');
+            });

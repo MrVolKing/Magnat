@@ -154,3 +154,65 @@
 .form-price{
     padding-top: 77px;
 }
+
+
+@media all and (max-width: 1250px) {
+    .section-one{
+        flex-direction: column;
+        align-items: center;
+        &__right{
+            margin-top: 20px;
+        }
+        &__blockcallback{
+            margin-top: 20px;
+        }
+    }
+    .section-table{
+        display: flex;
+        justify-content: center;
+        &__table{
+            width: 94vw;
+            height: 30vw;
+        }
+    }
+    
+}
+
+@media all and (max-width: 920px){
+    .section-one{
+        &__left{
+            width: 94vw;
+            height: 53vw;
+            .pricepage__shadowblock{
+                height: 17vw;
+            }
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media all and (max-width: 850px){
+    .section-three{
+        flex-direction: column;
+        align-items: center;
+        &__left{
+            text-align: center;
+        }
+        &__description{
+            padding: 0;
+        }
+        &__right{
+            margin-top: 20px;
+        }
+    }
+}
+
+
+@media all and (max-width: 660px) {
+    .section-table{
+        display: none;
+    }
+}

@@ -78,3 +78,41 @@
         }
     }
 }
+
+
+@media all and (max-width: 1250px) {
+    .footercontent{
+        .footer{
+            padding-right: 20px;
+            width: auto;
+        }
+    }
+}
+
+@media all and (max-width: 750px) {
+    .footercontent{
+        .footer{
+            flex-wrap: wrap;
+        }
+    }
+}
+
+@media all and (max-width: 580px) {
+    .footercontent{
+        .footer{
+            &__block1,  &__block2,  &__block3{
+                text-align: center;
+                width: 100%;
+            }
+            &__block4{
+                display: flex;
+                align-items: center;
+                width: 100%;
+                margin-top: 16px;
+            }
+            &__block1{
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

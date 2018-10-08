@@ -89,3 +89,26 @@
     overflow: hidden;
     // margin-right: 12px;
 }
+
+@media all and (max-width: 1250px) {
+    .works{
+        &__imgl, &__imgr{
+            display: none;
+        }
+        &__blockslid{
+            width: auto;
+            height: auto;
+        }
+        &__description{
+            width: auto;
+        }
+    }
+}
+
+@media all and (max-width: 500px) {
+    .works{
+        &__buttonblock{
+            display: none;
+        }
+    }
+}

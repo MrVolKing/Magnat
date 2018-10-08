@@ -1,0 +1,133 @@
+.title-services{
+    padding: 49px 0 55px 0;
+}
+
+.servicestoptext{
+    margin-bottom: 39px;
+}
+
+.toptext{
+    p{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+}
+
+.buildingservices{
+    background-color: #f5f5f5;
+    width: 1171px;
+    // height: 627px;
+    &__blockitem {
+        border: none !important;
+    }
+    
+}
+.buildingserv{
+    padding: 25px 0 0 0 !important;
+}
+.buildingservblocks{
+    margin: 24px 0 0 0;
+}
+
+.servicedescription{
+    padding: 32px 0 75px 0;
+    .descriptiontext{
+        p{
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+    .blockparagraphs{
+        display: flex;
+        justify-content: space-between;
+        margin: 31px 0 43px 0;
+        &__blockitem{
+            width: 371px;
+            // height: 445px;
+            background-color: #f5f5f5;
+            padding: 23px 37px 31px 33px;
+        }
+        &__title{
+            margin-bottom: 20px;
+            span{
+                font-size: 22px;
+                font-weight: 800;
+                line-height: 22px;
+                color: #262626;
+            }
+        }
+        &__blockpunkt{
+            .paragraph{
+                display: flex;
+                height: 16px;
+                // align-items: center;
+                margin-bottom: 16px;
+                &_wdth{
+                    height: 40px;
+                }
+                p{
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 28px;
+                }
+            }
+            .paragraph:before{
+                content: url(../images/paragraphgold.png);
+                margin-right: 9px;
+                margin-top: 3px;
+            }
+        }
+    }
+}
+
+.projects-services{
+    padding-bottom: 24px;
+}
+
+@media all and (max-width: 1250px) {
+    .servicestoptext{
+        text-align: center;
+    }
+    .buildingservices{
+        width: auto;
+        .buildingserv{
+            .buildingservblocks{
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+        &__blockitem{
+            width: 290px !important;
+            .about__imgblock{
+                width: auto;
+                height: 100%;
+            }
+        }
+    }
+    .servicedescription{
+        padding: 32px 0 30px 0;
+        .descriptiontext{
+            text-align: center;
+        }
+        .blockparagraphs{
+            margin: 31px 0 23px 0;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            &__blockitem{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+}
+
+@media all and (max-width: 420px) {
+    .servicedescription .blockparagraphs__blockpunkt .paragraph_wdth{
+        height: auto;
+    }
+    .servicedescription .blockparagraphs__blockpunkt .paragraph{
+        height: auto;
+    }
+}

@@ -23,3 +23,15 @@
         margin-left: -24px;
     }
 }
+
+@media all and (max-width: 500px) {
+    .bird{
+        border: 3px solid #cbaa45;
+        text-align: center;
+        &__toptitleblock{
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+}

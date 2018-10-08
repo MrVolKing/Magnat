@@ -1,0 +1,262 @@
+extends ../template
+
+block varibles
+    - var title = "Info"
+
+block content
+   
+    .content
+        include ../common/header.pug  
+
+        section.info-title                  
+            .wrapper
+                .titleblock
+                    .title 
+                        span Информационная страница
+                .wayblock
+                    .way
+                        a(href="./index.html") Главная  
+                        div &gt; 
+                        span Информационная страница
+                
+        section
+            .wrapper
+                .info-sectone
+                    .left
+                        .left__blockimg
+                            img(src="./images/news1.png", alt="") 
+                    .right
+                        include ../common/calc.pug
+                        .section-one__blockcallback
+                            a(href="#")
+                                span Задать вопрос
+                                div
+                .info-sectonetext
+                    p Строительство торгово-развлекательных и офисных центров связано с урбанизацией и ростом населенных пунктов. Новым районам, которые появляются в городах Крыма, требуется современная и развитая инфраструктура, неотъемлемой частью которой являются ТРЦ, ТЦ и офис-центры. При этом потребители предъявляют все более высокие требования к качеству и комфорту торговых и офисных площадей.   
+
+
+        section.info-sectiontwoo
+            .wrapper
+                .make
+                    .make__title
+                        p Создание ТРЦ и БЦ: подход компании Магнатстрой
+                    .make__text.make__text_mrg1
+                        p Мы воплощаем концепцию, разработанную нашими архитекторами, дизайнерами и маркетологами «под ключ». Всю работу можно разделить на 7 основных этапов:
+                    .make__paragraphs
+                        .paragraph
+                            p подготовка земельного участка;
+                        .paragraph
+                            p создание фундамента;
+                        .paragraph
+                            p возведение стен;
+                        .paragraph
+                            p монтаж кровли;
+                        .paragraph 
+                            p монтаж окон и дверей;
+                        .paragraph
+                            p подвод и монтаж инженерных коммуникаций;
+                        .paragraph
+                            p внешняя и внутренняя отделка.
+                    .make__text.make__text_mrg2
+                        p 
+                            a
+                                |После выбора земельного участка 
+                            |и утверждения проектно-сметной документации мы приступаем к подготовительным работам. Залог быстрого и качественного строительства любого крупного объекта – правильная организация строительной площадки. Мы очищаем участок, проводим (если требуется) дренирование территории, подводим первичные коммуникации и создаем комфортные условия для проживания и работы наших строителей.
+                    .make__text
+                        p Затем начинается наиболее трудоемкий и долгий период работы – закладка фундамента, возведение стен и кровли. Сильнее всего на срок строительства влияет не столько масштаб проекта, сколько слаженность трудового процесса на площадке. Проблемы нередко случаются, когда в строительстве принимают участие множество обособленных подрядчиков. Но об этом можно не беспокоиться, потому что при заказе торгово-развлекательного или офисного центра в компании Magnatstroy строительством объекта будет заниматься слаженная команда специалистов, работающих вместе 8 лет. 
+
+                .geography
+                    .geography__title
+                        p География строительства
+                    .geography__text
+                        p Заказать услуги компании Magnatstroy можно в любой точке Крыма, а также если Вы находитесь на материковой части России и хотите построить торгово-развлекательный или офисный центр на полуострове.
+                    .geography__blockfoto
+                        .geography__itemfoto
+                            img(src="./images/about2.png", alt="")
+                        .geography__itemfoto
+                            img(src="./images/about6.png", alt="")
+                        .geography__itemfoto
+                            img(src="./images/about1.png", alt="")
+                        .geography__itemfoto
+                            img(src="./images/about3.png", alt="")
+
+                .why
+                    .why__title 
+                        p Почему Магнатстрой?
+                    .why__text.why__text_mrg1
+                     p Заказать услуги компании Magnatstroy можно в любой точке Крыма, а также если Вы находитесь на материковой части России и хотите построить торгово-развлекательный или офисный центр на полуострове.
+                    .why__list
+                        .why__listitem  
+                            span
+                                | 1.
+                            p| У нас одна из самых демократичных ценовых политик на рынке – купить наши услуги можно по разумной цене, которая не завышается искусственно. 
+                        .why__listitem  
+                            span
+                                | 2.
+                            p| При небольших бюджетах на строительство ТРЦ и БЦ, мы не экономим на качестве материалов и добиваемся снижения расходов благодаря быстрой и слаженной работе команды профессионалов.
+                        .why__listitem  
+                            span
+                                | 3.
+                            p| Приступаем к работе в день подписания договора.
+                        .why__listitem  
+                            span
+                                | 4.
+                            p| Соблюдаем сроки, не жертвуя качеством постройки. Все незапланированные отклонения от графика обсуждаем с заказчиком.
+                        .why__listitem  
+                            span
+                                | 5.
+                            p| Каждый день отправляем заказчику фото- или видеоотчет о проделанной работе.
+                        .why__listitem  
+                            span
+                                | 6.
+                            p| По желанию заказчика, устанавливаем на объекте онлайн-камеру, транслирующую процесс строительства в реальном времени.
+                        .why__listitem  
+                            span
+                                | 7.
+                            p| Предлагаем гибкую систему оплаты – цена может быть разбита на несколько этапов.
+                    .why__text.why__text_mrg2
+                        p При создании торговых и офисных центров, заказчикам нередко приходится привлекать к работе большое количество подрядчиков, работу которых необходимо точно согласовывать. Недостаток такого подхода – большое количество накладок, неизбежно возникающих при взаимодействии разрозненных бригад. Как следствие, увеличиваются сроки строительства и появляются дополнительные издержки. Избежать этого можно, поручив все стадии создания ТРЦ или БЦ одной компании, имеющей в своем штате всех необходимых специалистов – такой как Magnatstroy.  
+                    .why__text
+                        p Обратившись в компанию Magnastroy, вы сможете воплотить в жизнь самый амбициозный проект торгово-развлекательного или бизнес-центра, уложившись не только в минимальный бюджет, но и получив в итоге современное функциональное здание с гарантией в 1 год.  
+
+        section.section-projects.projects-info
+            .wrapper
+                .projects
+                    .projects__titleblock.fontsdecor
+                        span Проекты каркасных домов
+                        img(src="./images/sliderstring.png", alt="")
+                    .projects__blockblocks
+                        .projects__blockitem
+                            .projects__blockimg
+                                img(src="./images/project1.png", alt="")
+                            .projects__title
+                                span Одноэтажный кирпичный дом, № W-209-1K
+                            .projects__blocktext
+                                .projects__text
+                                    div
+                                        span Площадь:
+                                        |  208.8 м2
+                                .projects__text
+                                    div 
+                                        span Материал:
+                                        | кирпич
+                                .projects__text
+                                    div 1 этаж, габариты: 19.14 х 21.99 м
+                                .projects__textprice
+                                    div 31 200 руб.
+                            .projects__button
+                                a(href="./project_one.html")
+                                    span Подробнее
+                        .projects__blockitem
+                            .projects__blockimg
+                                img(src="./images/project2.png", alt="")
+                            .projects__title
+                                span Дом из крупноформатных блоков RAUF, № O-203-1K
+                            .projects__blocktext
+                                .projects__text
+                                    div
+                                        span Площадь:
+                                        |  208.8 м2
+                                .projects__text
+                                    div 
+                                        span Материал:
+                                        | кирпич
+                                .projects__text
+                                    div 2 этажа, габариты: 10.5 х 10.5 м
+                                .projects__textprice
+                                    div 42 510 руб.
+                            .projects__button
+                                a(href="./project_one.html")
+                                    span Подробнее
+                        .projects__blockitem
+                            .projects__blockimg
+                                img(src="./images/project3.png", alt="")
+                            .projects__title
+                                span Одноэтажный кирпичный дом, № W-209-1K
+                            .projects__blocktext
+                                .projects__text
+                                    div
+                                        span Площадь:
+                                        |  208.8 м2
+                                .projects__text
+                                    div 
+                                        span Материал:
+                                        | кирпич
+                                .projects__text
+                                    div 1 этаж, габариты: 19.14 х 21.99 м
+                                .projects__textprice
+                                    div 32 900 руб.
+                            .projects__button
+                                a(href="./project_one.html")
+                                    span Подробнее
+                        .projects__blockitem
+                            .projects__blockimg
+                                img(src="./images/project1.png", alt="")
+                            .projects__title
+                                span Одноэтажный кирпичный дом, № W-209-1K
+                            .projects__blocktext
+                                .projects__text
+                                    div
+                                        span Площадь:
+                                        |  208.8 м2
+                                .projects__text
+                                    div 
+                                        span Материал:
+                                        | кирпич
+                                .projects__text
+                                    div 1 этаж, габариты: 19.14 х 21.99 м
+                                .projects__textprice
+                                    div 31 200 руб.
+                            .projects__button
+                                a(href="./project_one.html")
+                                    span Подробнее
+                        .projects__blockitem
+                            .projects__blockimg
+                                img(src="./images/project2.png", alt="")
+                            .projects__title
+                                span Дом из крупноформатных блоков RAUF, № O-203-1K
+                            .projects__blocktext
+                                .projects__text
+                                    div
+                                        span Площадь:
+                                        |  208.8 м2
+                                .projects__text
+                                    div 
+                                        span Материал:
+                                        | кирпич
+                                .projects__text
+                                    div 2 этажа, габариты: 10.5 х 10.5 м
+                                .projects__textprice
+                                    div 42 510 руб.
+                            .projects__button
+                                a(href="./project_one.html")
+                                    span Подробнее
+                        .projects__blockitem
+                            .projects__blockimg
+                                img(src="./images/project3.png", alt="")
+                            .projects__title
+                                span Одноэтажный кирпичный дом, № W-209-1K
+                            .projects__blocktext
+                                .projects__text
+                                    div
+                                        span Площадь:
+                                        |  208.8 м2
+                                .projects__text
+                                    div 
+                                        span Материал:
+                                        | кирпич
+                                .projects__text
+                                    div 1 этаж, габариты: 19.14 х 21.99 м
+                                .projects__textprice
+                                    div 32 900 руб.
+                            .projects__button
+                                a(href="./project_one.html")
+                                    span Подробнее
+                    .projects__blockbutton
+                        div
+                            a(href="./projects.html")
+                                span Посмотреть все
+
+        include ../common/footer.pug
+                    
+

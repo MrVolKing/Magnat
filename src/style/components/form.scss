@@ -45,4 +45,22 @@
 }
 
 
+@media all and (max-width: 1250px) {
+    .form{
+        &__titleblock{
+            text-align: center;
+        }
+        &__blockform{
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        &__input{
+            margin-bottom: 20px
+        }
+        &__submit{
+            margin-bottom: 20px;
+        }
+    }
+}
+
 

@@ -48,3 +48,14 @@
         left: 0;
     }
 }
+
+@media all and (max-width: 500px) {
+    .question{
+        &__righttitle{
+            span{
+                font-size: 20px;
+            }
+        }
+    }
+    
+}
