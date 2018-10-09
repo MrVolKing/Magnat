@@ -25,16 +25,43 @@
     &__centr{
         display: flex;
         justify-content: center;
+        position: relative;
+        z-index: 1000000000000;
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+            // .logotext{
+            //     transform: scale(1.03);
+            //     transition: 0.2s;
+            // }
+            // img{
+            //     width: 212px;
+            //     transition: 0.2s;
+            // }
+            // .header__top{
+            //     padding: 0;
+            // }
+            transform: scale(1.03);
+            transition: 0.1s;
+            
+        }
     }
     &__logoblock{
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: 0.1s;
+        img{
+            width: 202px;
+            transition: 0.2s;
+        }
         div{
             font-size: 42px;
             font-family: "izhitsa";
             color:$maintext;
             font-weight: 400;
+            transition: 0.2s;
             span{
                 color: $bordercolor;
                 font-family: "yermak";
@@ -63,7 +90,7 @@
     }
     &__bottom{
         border-bottom: 4px solid $bordercolor;
-        padding: 5px 0 7px 0; 
+        // padding: 5px 0 7px 0; 
     }
     &__contentbottom{
         width: 1170px;
@@ -90,6 +117,7 @@
         padding: 10px 18px 9px 21px;
         display: flex;
         cursor: pointer;
+        text-decoration: none;
         span{
             color: $white;
             font-size: 18px;
@@ -99,6 +127,13 @@
         img{
             width: 24px;
             height: 33px;
+            transition: 0.2s;
+        }
+    }
+    &__call:hover{
+        img{
+            transform: scale(1.2);
+            margin-bottom: 5px;
         }
     }
 }

@@ -1,0 +1,98 @@
+.selectblock1{
+    position: relative;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &__link{
+        
+    }
+    &__list{
+        display: none;
+        position: absolute;
+        left: -6px;
+        top: 68px;
+        // display: flex;
+        flex-direction: column;
+        // background-color: rgba(199, 169, 72, 1);
+        background-color: $white;
+        border: 1px solid #c7a948;
+        z-index: 10000;
+    }
+    &__item{
+        border-bottom: 1px solid #c7a948;
+        padding: 3px 6px 3px 6px;
+        font-size: 14px !important;
+        width: 140px;
+    }
+    &__item:last-child{
+        border: none;
+    }
+
+}
+
+.selectblock1:hover{
+    .selectblock1__list{
+        display: flex;
+    }
+}
+
+
+.selectblock2{
+    position: relative;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &__list1{
+        display: none;
+        position: absolute;
+        left: -6px;
+        top: 68px;
+        // display: flex;
+        flex-direction: column;
+        // background-color: rgba(199, 169, 72, 1);
+        background-color: $white;
+        border: 1px solid #c7a948;
+        z-index: 10000;
+    }
+    &__list2{
+        display: none;
+        position: absolute;
+        left: 236px;
+        top: 68px;
+        // display: flex;
+        flex-direction: column;
+        // background-color: rgba(199, 169, 72, 1);
+        background-color: $white;
+        border: 1px solid #c7a948;
+        z-index: 10000;
+    }
+    &__list3{
+        display: none;
+        position: absolute;
+        left: 478px;
+        top: 68px;
+        // display: flex;
+        flex-direction: column;
+        // background-color: rgba(199, 169, 72, 1);
+        background-color: $white;
+        border: 1px solid #c7a948;
+        z-index: 10000;
+    }
+    &__item{
+        border-bottom: 1px solid #c7a948;
+        padding: 3px 6px 3px 6px;
+        font-size: 14px !important;
+        width: 240px;
+    }
+    &__item:last-child{
+        border: none;
+    }
+}
+
+.selectblock2:hover{
+    .selectblock2__list1, .selectblock2__list2, .selectblock2__list3{
+        display: flex;
+    }
+}

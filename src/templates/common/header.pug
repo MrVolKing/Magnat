@@ -7,9 +7,8 @@ header.hoadercontent
                 //- .header__imgr
                 //-     img(src="./images/imgr.png", alt="")
                 .header__centr
-                    .header__logoblock
-                        a(href="./index.html")
-                            img(src="./images/logo.png", alt="")
+                    a(href="./index.html").header__logoblock
+                        img(src="./images/logo.png", alt="")
                         .logotext
                             | Магнат
                             span Ъ 
@@ -28,14 +27,43 @@ header.hoadercontent
             .header__bottom
                 .header__contentbottom
                     .header__menu
-                        a(href="./projects.html") Проекты                                                   
+                         
+                        .selectblock1
+                            a.selectblock1__link(href="./projects.html") Проекты 
+                            .selectblock1__list
+                                a.selectblock1__item(href="./projects.html") Дома до 100м2
+                                a.selectblock1__item(href="./projects.html") Дома 100-150 м2
+                                a.selectblock1__item(href="./projects.html") Дома от 150 м2
+                                a.selectblock1__item(href="./projects.html") Одноэтажные дома
+                                a.selectblock1__item(href="./projects.html") Дома с мансардой
+                                a.selectblock1__item(href="./projects.html") Двухэтажные дома
+                                a.selectblock1__item(href="./projects.html") Дачные дома 
+                        .selectblock2
+                            a.selectblock2__link(href="./info.html") Строительство домов 
+                            .selectblock2__blocklists
+                                .selectblock2__list1
+                                    a.selectblock2__item(href="./info.html") Строительство частных домов под ключ
+                                    a.selectblock2__item(href="./info.html") Строительство коттеджей
+                                    a.selectblock2__item(href="./info.html") Строительство коттеджей
+                                    a.selectblock2__item(href="./info.html") Строительство индивидуальных жилых домов
+                                    a.selectblock2__item(href="./info.html") Строительство гостевых домов
+                                    a.selectblock2__item(href="./info.html") Строительство домов с мансардой  
+                                .selectblock2__list2
+                                    a.selectblock2__item(href="./info.html") Строительство гостиниц
+                                    a.selectblock2__item(href="./info.html") Строительство объектов общего назначения 
+                                    a.selectblock2__item(href="./info.html") Строительство торговых и офисных центров
+                                    a.selectblock2__item(href="./info.html") Строительство промышленных объектов 
+                                    a.selectblock2__item(href="./info.html") Строительство детских и школьных учреждений
+                                    a.selectblock2__item(href="./info.html") Строительство спортивных комплексов    
+                                .selectblock2__list3
+                                    a.selectblock2__item(href="./info.html") Строительство 1-этажных домов
+                                    a.selectblock2__item(href="./info.html") Строительство 2-этажных домов                                            
                         a(href="./materials.html") Из чего мы строим
                         a(href="./services.html") Наши услуги 
                         a(href="./price.html") Цены
                         a(href="./about.html") О нас
-                        a(href="./gallery.html") Фото
                         a(href="./contacts.html") Контакты
-                    .header__call
+                    a(href="./info.html").header__call
                         span Еще нет земельного участка? Мы подберем!
                         img(src="./images/map.png", alt="")
             

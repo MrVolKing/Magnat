@@ -25,22 +25,22 @@ block content
             .wrapper
                 .nav
                     .nav__blockblocks
-                        .nav__blockitem.nav__blockitem_1
+                        .nav__blockitem.nav__blockitem_1#nav1
                             a(href="#")
                                 span  Кирпич
-                        .nav__blockitem.nav__blockitem_2.active
+                        .nav__blockitem.nav__blockitem_2#nav2.activenav
                             a(href="#")
                                 span Каркасные дома
-                        .nav__blockitem
+                        .nav__blockitem#nav3
                             a(href="#")
                                 span Из ракушечника
-                        .nav__blockitem
+                        .nav__blockitem#nav4
                             a(href="#")
                                 span  Из газобетона
-                        .nav__blockitem
+                        .nav__blockitem#nav5
                             a(href="#")
                                 span Из пеноблоков
-                        .nav__blockitem
+                        .nav__blockitem#nav6
                             a(href="#")
                                 span Клееный брус
                     
@@ -249,21 +249,22 @@ block content
                             .swiper-pagination     
                             //- .swiper-button-next 
                     .stages__right
+                        .question__img
+                            img(src="./images/rama3.png", alt="")
                         .question.question_materials
                             .question__righttitle     
                                 span Часто задаваемые вопросы:
                             .question__paragraphitem  
-                                span.question__paragraphtext Чем отличаются каркасные дома от sip? 
+                                a(href="./faq.html").question__paragraphtext Чем отличаются каркасные дома от sip? 
                             .question__paragraphitem  
-                                span.question__paragraphtext Какой фундамент больше всего подходит для каркасного дома?
+                                a(href="./faq.html").question__paragraphtext Какой фундамент больше всего подходит для каркасного дома?
                             .question__paragraphitem  
-                                span.question__paragraphtext Каков срок службы каркасного дома?
+                                a(href="./faq.html").question__paragraphtext Каков срок службы каркасного дома?
                             .question__paragraphitem  
-                                span.question__paragraphtext На каком этапе после окончания строительства, можно приступать к отделке дома?
+                                a(href="./faq.html").question__paragraphtext На каком этапе после окончания строительства, можно приступать к отделке дома?
                             .question__paragraphitem  
-                                span.question__paragraphtext С чем связана низкая стоимость строительства каркасных домов, по сравнению с другими материалами?
-                            .question__img
-                                img(src="./images/rama3.png", alt="")
+                                a(href="./faq.html").question__paragraphtext С чем связана низкая стоимость строительства каркасных домов, по сравнению с другими материалами?
+                            
             
         section
             .wrapper
@@ -390,7 +391,7 @@ block content
                                     img(src="./images/r.png", alt="")
                         .works__buttonbottom
                             button.works__button
-                                a(href="#")
+                                a(href="./projects.html")
                                     span Посмотреть все
         section
             .wrapper
@@ -552,3 +553,4 @@ block content
                         
         include ../common/footer.pug
         include ../common/script.pug
+        include ../common/scriptnav.pug

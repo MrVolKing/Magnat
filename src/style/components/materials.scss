@@ -34,11 +34,17 @@
             }
         }
     }
-    .active{
+    &__blockitem:hover{
         background-color: #c7a948;
         span{
-            color: $white;
+            color: $white !important;
         }
+    }
+}
+.activenav{
+    background-color: #c7a948;
+    span{
+        color: $white !important;
     }
 }
 
@@ -241,6 +247,9 @@
             position: relative;
             overflow: hidden;
         }
+    }
+    &__right{
+        position: relative;
     }
     .swiper-contain{
         height: 583px;

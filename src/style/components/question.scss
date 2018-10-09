@@ -4,6 +4,7 @@
     background-color: $maintext;
     padding: 27px 40px 0 19px;
     position: relative;
+    z-index: 1111000000000;
     &_price{
         height: 398px;
     }
@@ -15,6 +16,7 @@
         position: absolute;
         top: -7px;
         left: -7px;
+        z-index: 1;
     }
     &__righttitle{
         margin-bottom: 29px;

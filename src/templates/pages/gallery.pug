@@ -149,17 +149,18 @@ block content
                                         span Записаться на просмотр объекта
 
                         .gallerycontent__bottom
+                            .question__img
+                                img(src="./images/rama.png", alt="")
                             .question.question_
                                 .question__righttitle     
                                     span Часто задаваемые вопросы:
                                 .question__paragraphitem  
-                                    span.question__paragraphtext Вентиляция в доме
+                                    a(href="./faq.html").question__paragraphtext Вентиляция в доме
                                 .question__paragraphitem  
-                                    span.question__paragraphtext Виды декоратинвых штукатурок
+                                    a(href="./faq.html").question__paragraphtext Виды декоратинвых штукатурок
                                 .question__paragraphitem  
-                                    span.question__paragraphtext Виды сайдинга для отделки дома
-                                .question__img
-                                    img(src="./images/rama.png", alt="")
+                                    a(href="./faq.html").question__paragraphtext Виды сайдинга для отделки дома
+                                
         section.navigations-gallery
             .wrapper
                 include ../common/navigations.pug
