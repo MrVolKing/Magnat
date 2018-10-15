@@ -63,32 +63,32 @@ block content
                             span Из чего мы строим?
                             img(src="./images/aboutstring.png", alt="")
                         .about__blockblocks
-                            .about__blockitem   
+                            a(href="./materials.html").about__blockitem   
                                 .about__imgblock
                                     img(src="./images/about1.png", alt="")
                                 .about__titleblockitem
                                     span Ракушечник
-                            .about__blockitem   
+                            a(href="./materials.html").about__blockitem   
                                 .about__imgblock
                                     img(src="./images/about2.png", alt="")
                                 .about__titleblockitem
                                     span Газобетон
-                            .about__blockitem   
+                            a(href="./materials.html").about__blockitem   
                                 .about__imgblock
                                     img(src="./images/about3.png", alt="")
                                 .about__titleblockitem
                                     span Каркасный
-                            .about__blockitem   
+                            a(href="./materials.html").about__blockitem   
                                 .about__imgblock
                                     img(src="./images/about4.png", alt="")
                                 .about__titleblockitem
                                     span Пеноблок
-                            .about__blockitem   
+                            a(href="./materials.html").about__blockitem   
                                 .about__imgblock
                                     img(src="./images/about5.png", alt="")
                                 .about__titleblockitem
-                                    span Каменный
-                            .about__blockitem.about__blockitem_pad 
+                                    span Клееный брус
+                            a(href="./materials.html").about__blockitem.about__blockitem_pad 
                                 .about__imgblock
                                     img(src="./images/about6.png", alt="")
                                 .about__titleblockitem
@@ -366,9 +366,23 @@ block content
                         .projects__longstring
                             img(src="./images/projectslong.png", alt="")
 
+                section.main-bottomtext
+                    .textwrap#textwrap
+                        .text
+                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.
+                            p  Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. 
+                        .text.hidden#hidden
+                            p Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики.  Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. 
+                        .linbottom
+                            .linbottom__lin#shadow
+                                img(src="./images/newsimgbottom.png", alt="")
+
                 section.form-main
                     include ../common/form.pug
         include ../common/footer.pug
+        include ../common/popaps.pug
+        include ../common/script.pug
+        
 
 
         

@@ -165,6 +165,33 @@
 }
 
 
+
+.price-content{
+    &__textblock{
+        position: absolute;
+        color: $white;
+        bottom: 78px;
+        left: 30px;
+        padding-right: 60px;
+    }
+    &__text{
+        span{
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+        &_mrg{
+            margin-top: 12px;
+            span{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+
 @media all and (max-width: 1250px) {
     .section-one{
         flex-direction: column;

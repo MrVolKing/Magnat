@@ -36,6 +36,7 @@
             font-weight: 400;
             color: $white;
             opacity: 0.4;
+            font-family: "izhitsa";
         }
     }
     &__block2, &__block3{
@@ -67,6 +68,29 @@
                 font-weight: 400;
                 color: $white;
             }
+        }
+    }
+    &__blocksocial{
+        margin: 20px;
+        display: flex;
+        svg{
+            fill: $white;
+            transition: 0.2s;
+        }
+        .instagram{
+            margin-left: 30px;
+        }
+    }
+    .vk:hover{
+        svg{
+            fill: #cbaa45;
+            transition: 0.2s;
+        }
+    }
+    .instagram:hover{
+        svg{
+            fill: #cbaa45;
+            transition: 0.2s;
         }
     }
 }

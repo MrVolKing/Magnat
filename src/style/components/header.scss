@@ -76,16 +76,20 @@
         flex-direction: column;
         align-items: flex-end;
         margin-top: -50px;
+        position: relative;
+        z-index: 9346554545458768;
         span{
             color: #2f2f2f;
             font-family: "Circe - Extra Bold";
             font-size: 30px;
             font-weight: 800;
             line-height: 22.01px;
+            // cursor: pointer;
         }
-        a{
+        .btnpopap{
             color: #262626;
             font-size: 16p;
+            cursor: pointer;
         }
     }
     &__bottom{
@@ -111,7 +115,7 @@
     }
     &__call{
         width: 349px;
-        height: 57px;
+        height: auto;
         background-color: $bordercolor;
         margin-left: 26px;
         padding: 10px 18px 9px 21px;
@@ -156,7 +160,7 @@
     background-color: white;
     height: 78vh;
     position: fixed;
-    z-index: 10000;
+    z-index: 1065756567576000;
     top: 0;
     right: 0;
     &__paragraph{

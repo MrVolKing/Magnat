@@ -22,6 +22,8 @@ block content
         section
             .wrapper
                 .nav-projects
+                    a(href="#")#link8 Все проекты
+                        div
                     a(href="#").activpage#link1 Дома до 100м2
                         div
                     a(href="#")#link2 Дома 100-150 м2
@@ -241,6 +243,7 @@ block content
                 include ../common/navigations.pug
 
         include ../common/footer.pug
+        include ../common/popaps.pug
 
         script.
             var link1 = document.getElementById('link1');
@@ -253,6 +256,7 @@ block content
                 link5.classList.remove('activpage');
                 link6.classList.remove('activpage');
                 link7.classList.remove('activpage');
+                link8.classList.remove('activpage');
             });
 
             link2.addEventListener('click', function () { 
@@ -263,6 +267,7 @@ block content
                 link5.classList.remove('activpage');
                 link6.classList.remove('activpage');
                 link7.classList.remove('activpage');
+                link8.classList.remove('activpage');
             });
 
             link3.addEventListener('click', function () { 
@@ -273,6 +278,7 @@ block content
                 link5.classList.remove('activpage');
                 link6.classList.remove('activpage');
                 link7.classList.remove('activpage');
+                link8.classList.remove('activpage');
             });
 
             link4.addEventListener('click', function () { 
@@ -283,6 +289,7 @@ block content
                 link5.classList.remove('activpage');
                 link6.classList.remove('activpage');
                 link7.classList.remove('activpage');
+                link8.classList.remove('activpage');
             });
 
             link5.addEventListener('click', function () { 
@@ -293,6 +300,7 @@ block content
                 link2.classList.remove('activpage');
                 link6.classList.remove('activpage');
                 link7.classList.remove('activpage');
+                link8.classList.remove('activpage');
             });
 
             link6.addEventListener('click', function () { 
@@ -303,6 +311,7 @@ block content
                 link5.classList.remove('activpage');
                 link2.classList.remove('activpage');
                 link7.classList.remove('activpage');
+                link8.classList.remove('activpage');
             });
 
             link7.addEventListener('click', function () { 
@@ -313,4 +322,16 @@ block content
                 link5.classList.remove('activpage');
                 link6.classList.remove('activpage');
                 link2.classList.remove('activpage');
+                link8.classList.remove('activpage');
+            });
+
+             link8.addEventListener('click', function () { 
+                link8.classList.add('activpage');
+                link1.classList.remove('activpage');
+                link3.classList.remove('activpage');
+                link4.classList.remove('activpage');
+                link5.classList.remove('activpage');
+                link6.classList.remove('activpage');
+                link2.classList.remove('activpage');
+                link7.classList.remove('activpage');
             });

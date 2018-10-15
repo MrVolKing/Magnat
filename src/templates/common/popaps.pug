@@ -1,0 +1,69 @@
+#openModal1.modalDialogcustom
+    div.contentpopap 
+        .popapwrapper.mainpopap
+            form.form
+                .form__title
+                    p заказать обратный звонок
+                .form__text
+                    p И наш менеджер свяжется с вами в ближайшее время
+                .form__blockinput
+                    input(type="text" placeholder="Ваше имя")
+                    input(type="tel" placeholder="Ваш телефон")
+                    button(type="button")#btn2
+                        span Заказать звонок
+                //- .form__blockbutton
+                //-     button(type="button")#btn2
+                //-         span Заказать звонок
+            .close1#close1(href='#close', title='Close') 
+                img(src="./images/close.png", alt="" width="23")
+            .imgbg
+                img(src="./images/popup.png", alt="")
+
+
+#openModal2.modalDialogcustom
+    div.contentpopap 
+        .popapwrapper.thanks
+            .blockcontent
+                .blockcontent__title
+                    p Спасибо за заявку
+                .blockcontent__text
+                    p Наш менеджер свяжется с вами в ближайшее время
+                
+
+            .close2#close2(href='#close', title='Close') 
+                img(src="./images/close.png", alt="" width="23")
+
+
+script.
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+    var openModal1 = document.getElementById("openModal1");
+    var close1 = document.getElementById("close1");
+    var openModal2 = document.getElementById("openModal2");
+    var close2 = document.getElementById("close2");
+
+    btn1.addEventListener('click', () => {
+        openModal1.classList.add('modalDialogcustomactive');
+    });
+
+    close1.addEventListener('click', () => {
+        openModal1.classList.remove('modalDialogcustomactive');
+    });
+
+
+
+    btn2.addEventListener('click', () => {
+        openModal2.classList.add('modalDialogcustomactive');
+        openModal1.classList.remove('modalDialogcustomactive');
+    });
+
+    close2.addEventListener('click', () => {
+        openModal2.classList.remove('modalDialogcustomactive');
+    });
+
+
+
+    btn3.addEventListener('click', () => {
+        openModal1.classList.add('modalDialogcustomactive');
+    });
