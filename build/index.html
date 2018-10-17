@@ -7,19 +7,19 @@
     <meta content="" name="keywords">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="./styles/app.min.css?5">
-    <script src="./scripts/app.js?5" defer></script><script src="./dist/js/jquery-3.2.1.min.js?5"></script> 
-<script type="text/javascript" src="./dist/js/slick.js?5"></script>
-<link rel="stylesheet" href="./dist/css/slick.css?5">
-<link rel="stylesheet" href="./dist/css/slick-theme.css?5">
-<script src="./dist/js/swiper.min.js?5"></script>
-<link rel="stylesheet" href="./dist/css/photoswipe.css?5">
-<link rel="stylesheet" href="./dist/css/default-skin.css?5">
-<script src="./dist/js/photoswipe.min.js?5"></script>
-<script src="./dist/js/photoswipe-ui-default.min.js?5"></script> 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?5"></script>
-<script src="./dist/js/masonry.pkgd.min.js?5"></script>
-<script src="./dist/js/main.js?5"></script> 
+    <link rel="stylesheet" href="./styles/app.min.css?6">
+    <script src="./scripts/app.js?6" defer></script><script src="./dist/js/jquery-3.2.1.min.js?6"></script> 
+<script type="text/javascript" src="./dist/js/slick.js?6"></script>
+<link rel="stylesheet" href="./dist/css/slick.css?6">
+<link rel="stylesheet" href="./dist/css/slick-theme.css?6">
+<script src="./dist/js/swiper.min.js?6"></script>
+<link rel="stylesheet" href="./dist/css/photoswipe.css?6">
+<link rel="stylesheet" href="./dist/css/default-skin.css?6">
+<script src="./dist/js/photoswipe.min.js?6"></script>
+<script src="./dist/js/photoswipe-ui-default.min.js?6"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.js?6"></script>
+<script src="./dist/js/masonry.pkgd.min.js?6"></script>
+<script src="./dist/js/main.js?6"></script> 
   </head>
   <body>
     <div class="content">
@@ -121,37 +121,138 @@
                       <label class="calc__label">Площадь:</label>
                       <div class="calc__quantity-block quantity-block">
                         <button class="calc__quantity-arrow-plus quantity-arrow-plus"><img src="./images/t.png" alt=""></button>
-                        <input class="calc__quantity-num quantity-num" type="text" value="1 м²">
+                        <!-- disabled-->
+                        <input class="calc__quantity-num quantity-num" id="square" type="text" value="1">
                         <button class="calc__quantity-arrow-minus quantity-arrow-minus calc__quantity-arrow-plus calc__quantity-arrow-plus_b"><img src="./images/b.png" alt=""></button>
+                        <div class="t">м&sup2;</div>
                       </div>
                     </div>
                     <div><span class="calc__label">Этажность:
-                        <select class="calc__input calc__input_select" name="">
+                        <select class="calc__input calc__input_select" id="floor" name="">
                           <option value="1">1  </option>
                           <option value="2">2</option>
                         </select></span></div>
                   </div>
                   <div class="calc__blockselectbottom">
                     <label class="calc__label">Технология строительства:
-                      <select class="calc__input calc__input_select2" name="">
-                        <option value="Ракушечник">Ракушечник</option>
-                        <option value="Газобетон">Газобетон</option>
-                        <option value="Каркасная">Каркасная</option>
-                        <option value="Пеноблок">Пеноблок</option>
-                        <option value="Каменная">Каменная</option>
-                        <option value="Кирпичная">Кирпичная</option>
+                      <select class="calc__input calc__input_select2" id="materials" name="">
+                        <option value="1">Ракушечник</option>
+                        <option value="2">Газобетон</option>
+                        <option value="3">Пеноблок</option>
+                        <option value="4">Кирпичная</option>
+                        <option value="5">Клеённый брус</option>
+                        <option value="6">Каркасный</option>
                       </select>
                     </label>
                   </div>
                   <div class="calc__blockbutton">
-                    <button class="calc__button"> <span>Посчитать</span></button>
+                    <button class="calc__button" id="btn_step1"> <span>Посчитать</span></button>
                   </div>
                 </div>
                 <div class="calc__bottomblock">
                   <div class="calc__bottomblocktext">Стоимость строительства:</div>
-                  <div class="calc__bottomblocktext calc__bottomblocktext_color">188 220 руб.</div>
+                  <div class="calc__bottomblocktext calc__bottomblocktext_color"><span id="global_sum_result">
+                        </span>&ensp;руб.</div>
                 </div>
               </div>
+              <script>
+                (function(){
+                    var text = document.getElementById("square"),
+                        testText;
+                        text.onkeyup          =  function testKey(){
+                        var testText       =  text.value;
+                            if(testText*1 + 0  !=  text.value){
+                                text.value      = testText.substring(0, testText.length - 1)    
+                            }
+                        }
+                })();
+                
+                
+                $(document).ready(() => {
+                    var global_result = "15 000";
+                    var result = "15 000";
+                    
+                
+                    const $count_floor_el = $('#floor');
+                    const $count_materials_el = $('#materials');
+                    const $count_square_el = $('#square');
+                    const btn_step1 = $('#btn_step1');
+                    const calc__quantity = $('.calc__quantity-num')
+                    const $t = $('.t')
+                
+                    
+                
+                    function recount(argument) {
+                        $('#global_sum_result').html(global_result.replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 '));
+                        if(calc__quantity.val().lenght === 1){
+                            t.css('left', '10')
+                        }
+                    }
+                    recount();
+                
+                    btn_step1.on('click', () => {
+                        const count_floor_el_val = $count_floor_el.val();
+                        const count_materials_el_val = $count_materials_el.val();
+                        const count_square_el_val = $count_square_el.val();
+                        //- $('#btn_step1').css('background-color', 'red');
+                        
+                        
+                        if(count_floor_el_val === '1' && count_materials_el_val === '1'){
+                            //- console.log('evalue');
+                            result = "15000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '1' && count_materials_el_val === '2'){
+                            result = "16000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '1' && count_materials_el_val === '3'){
+                            result = "16000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '1' && count_materials_el_val === '4'){
+                            result = "19000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '1' && count_materials_el_val === '5'){
+                            result = "25000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '1' && count_materials_el_val === '6'){
+                            result = "14500";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '2' && count_materials_el_val === '1'){
+                            result = "13000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '2' && count_materials_el_val === '2'){
+                            result = "14000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '2' && count_materials_el_val === '3'){
+                            result = "14000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '2' && count_materials_el_val === '4'){
+                            result = "17000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '2' && count_materials_el_val === '5'){
+                            result = "20000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else if (count_floor_el_val === '2' && count_materials_el_val === '6'){
+                            result = "12000";
+                            global_result = (result * count_square_el_val + '');
+                        }
+                        else{
+                            global_result = "Площадь введена некорректно";
+                        }
+                        recount();
+                    });
+                });
+              </script>
             </div>
           </div>
         </div>

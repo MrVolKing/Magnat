@@ -28,7 +28,7 @@ $(function() {
   
           let val = parseInt($quantityNum.val().split(" ")[0])-1;
   
-          $quantityNum.val(val + " м²");
+          $quantityNum.val(val + "");
           console.log( $quantityNum.val)
           return;
   
@@ -43,7 +43,7 @@ $(function() {
   
           let val = parseInt($quantityNum.val().split(" ")[0])+1;
   
-          $quantityNum.val(val + " м²");
+          $quantityNum.val(val + " ");
           return;
   
   
@@ -54,3 +54,6 @@ $(function() {
     })();
   
   });
+
+
+  

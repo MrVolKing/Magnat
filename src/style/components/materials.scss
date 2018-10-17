@@ -81,7 +81,7 @@
         line-height: 23px;
     }
     &__textblock{
-        padding: 16px 0 13px 0;
+        padding: 16px 76px 13px 0;
         p{
             font-size: 16px;
             font-weight: 400;
@@ -156,6 +156,7 @@
         padding-left: 17px;
     }
     &__formradio{
+        display: none;
         padding: 20px 0 45px 0;
         width: 270px;
         height: 498px;
@@ -231,6 +232,116 @@
                 line-height: 16px;
                 color: #2f2f2f;
                 font-family: circe;
+            }
+        }
+    }
+    &__right{
+        .visible{
+            display: block !important;
+        }
+    }
+}
+
+.resultform{
+    display: none;
+    width: 270px;
+    height: 498px;
+    background-color: #eeeeee;
+    padding: 20px 0 0 0;
+    &__title{
+        padding-left: 19px;
+        p{
+            color: #262626;
+            font-family: "circe";
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 22px;
+        }
+    }
+    &__blockresult{
+        padding: 44px 25px 14px 22px;
+    }
+    .resultitem{
+        &__top{
+            display: flex;
+            justify-content: space-between;
+        }
+        &__title{
+            p{
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+        &__procent{
+            p{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+            }
+        }
+        &__bottom{
+            margin-top: 4px;
+            margin-bottom: 18px;
+            .grey{
+                width: 223px;
+                height: 8px;
+                background-color: #e0e0e0;
+                position: relative;
+                .colorblock1{
+                    background-color: #aeaeae;
+                    height: 100%;
+                    width: 19%;
+                }
+                .colorblock2{
+                    background-color: #aeaeae;
+                    height: 100%;
+                    width: 2%;
+                }
+                .colorblock3{
+                    background-color: #aeaeae;
+                    height: 100%;
+                    width: 35%;
+                }
+                .colorblock4{
+                    background-color: #aeaeae;
+                    height: 100%;
+                    width: 27%;
+                }
+                .colorblock5{
+                    background-color: #aeaeae;
+                    height: 100%;
+                    width: 30%;
+                }
+                .colorblock6{
+                    background-color: #aeaeae;
+                    height: 100%;
+                    width: 2%;
+                }
+                .activ{
+                    background-color: #d5b44a;
+                    height: 100%;
+                    width: 19%;
+                }
+            }
+            
+        }
+    }
+    .numberofpeople{
+        padding: 27px 91px 30px 22px;
+        width: 270px;
+        background-color: #e0e0e0;
+        &__title{
+            line-height: 20px;
+            p{
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        &__number{
+            p{
+                font-size: 16px;
+                font-weight: 700;
             }
         }
     }

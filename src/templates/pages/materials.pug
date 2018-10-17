@@ -164,23 +164,10 @@ block content
                                     td
                                     td
                     .secttabl__right 
-                        form.secttabl__formradio
+                        form.secttabl__formradio.visible#formradio
                             .secttabl__title
                                 span А какой дом хотите построить Вы? 
                             .secttabl__blockinputs
-                                //- input#1(type="radio" name="materials" value="Каркасный дом")
-                                //- label(for="1") Каркасный дом
-                                //- input#2(type="radio" name="materials" value="Из ракушечника")
-                                //- label(for="2") Из ракушечника
-                                //- input#3(type="radio" name="materials" value="Из газобетона")
-                                //- label(for="3") Из газобетона
-                                //- input#4(type="radio" name="materials" value="Из пеноблоков")
-                                //- label(for="4") Из пеноблоков
-                                //- input#5(type="radio" name="materials" value="Кирпичный")
-                                //- label(for="5") Кирпичный
-                                //- input#6(type="radio" name="materials" value="Клееный брус")
-                                //- label(for="6") Клееный брус
-
                                 label.radio1
                                     input(class="radio", type="radio", name="radio-test")
                                     span.radio-custom
@@ -206,8 +193,72 @@ block content
                                     span.radio-custom
                                     span.label Клееный брус
                             .secttabl__blockbutton
-                                button(type="submit")
+                                button(type="submit")#vote_btn
                                     span Голосовать!
+
+                        .resultform#resultform
+                            .resultform__title
+                                p А какой дом хотите построить Вы?
+                            .resultform__blockresult
+                                .resultitem
+                                    .resultitem__top
+                                        .resultitem__title
+                                            p Каркасный дом
+                                        .resultitem__procent
+                                            p 19%
+                                    .resultitem__bottom
+                                        .grey
+                                            .colorblock1.activ
+                                .resultitem
+                                    .resultitem__top
+                                        .resultitem__title
+                                            p Из ракушечника
+                                        .resultitem__procent
+                                            p 2%
+                                    .resultitem__bottom
+                                        .grey
+                                            .colorblock2
+                                .resultitem
+                                    .resultitem__top
+                                        .resultitem__title
+                                            p Из газобетона
+                                        .resultitem__procent
+                                            p 35%
+                                    .resultitem__bottom
+                                        .grey
+                                            .colorblock3
+                                .resultitem
+                                    .resultitem__top
+                                        .resultitem__title
+                                            p Из пеноблоков
+                                        .resultitem__procent
+                                            p 27%
+                                    .resultitem__bottom
+                                        .grey
+                                            .colorblock4
+                                .resultitem
+                                    .resultitem__top
+                                        .resultitem__title
+                                            p Кирпичный
+                                        .resultitem__procent
+                                            p 30%
+                                    .resultitem__bottom
+                                        .grey
+                                            .colorblock5
+                                .resultitem
+                                    .resultitem__top
+                                        .resultitem__title
+                                            p Клееный брус
+                                        .resultitem__procent
+                                            p 2%
+                                    .resultitem__bottom
+                                        .grey
+                                            .colorblock6
+                            .numberofpeople
+                                .numberofpeople__title
+                                    p Всего проголосовало: 
+                                .numberofpeople__number
+                                    p 121 человек
         section
             .wrapper
                 .stages
@@ -555,3 +606,14 @@ block content
         include ../common/popaps.pug
         include ../common/script.pug
         include ../common/scriptnav.pug
+
+        script.
+            var vote_btn = document. getElementById('vote_btn');
+            var formradio = document. getElementById('formradio');
+            var resultform = document. getElementById('resultform');
+
+            vote_btn.addEventListener('click', function (event) { 
+                event.preventDefault();
+                formradio.classList.toggle('visible');
+                resultform.classList.add('visible');
+            });

@@ -4,6 +4,10 @@
     var shadow = document.getElementById('shadow');
 
     textwrap.addEventListener('click', function () { 
-        hidden.classList.toggle('hidden');
+        hidden.classList.remove('hidden');
         shadow.classList.toggle('shadownone');
     });
+
+
+
+    
