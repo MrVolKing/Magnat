@@ -134,7 +134,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 45px;
     }
     &__blockbutton{
         display: flex;
@@ -174,7 +174,7 @@
             justify-content: center;
         }
         &__blockitem{
-            margin: 0 20px 50px 20px;
+            margin: 0 20px 74px 20px;
         }
         &__longstring{
             width: 92vw;
@@ -193,11 +193,20 @@
     }
 }
 
+@media all and (max-width: 500px) {
+    .projects{
+        &__blockitem{
+            border: 3px solid #cbaa45;
+        }
+    }
+
+}
+
 @media all and (max-width: 420px) {
     .projects{
         &__blockitem{
             width: 90vw;
-            margin: 0 20px 60px 20px;
+            margin: 0 20px 83px 20px;
         }
         &__blockimg{
             width: 71vw;
@@ -212,13 +221,8 @@
             transform: translateX(-50%);
         }
     }
+    .projects__blockbutton{
+        margin-bottom: 20px;
+    }
 }
 
-@media all and (max-width: 500px) {
-        .projects{
-            &__blockitem{
-                border: 3px solid #cbaa45;
-            }
-        }
-
-}

@@ -248,7 +248,33 @@
 
 
 @media all and (max-width: 660px) {
+    // .section-table{
+    //     display: none;
+    // }
+}
+
+@media all and (max-width: 500px){
+
     .section-table{
-        display: none;
+        overflow: auto;
+    }
+    .section-table__table{
+        // margin-left: 34vw;
+        font-size: 15px;
+        margin-left: 240px;
+    }
+    .section-table__td-title{
+        font-size: 16px;
+        padding: 0 6px;
+    }
+    .section-table__tdtext{
+        font-size: 17px;
+        padding: 8px;
+    }
+}
+
+@media all and (max-width: 430px){
+    .section-table__table{
+        margin-left: 350px;
     }
 }

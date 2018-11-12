@@ -203,13 +203,19 @@
   }
 
   .aboutpagin{
-    bottom: 15px;
-    right: 7.5px;
-    width: 104%;
-    z-index: 100000;
-    height: 23%;
-    display: flex;
-    justify-content: flex-end;
+    // bottom: 15px;
+    // right: 7.5px;
+    // width: 104%;
+    // z-index: 100000;
+    // height: 23%;
+    // display: flex;
+    // justify-content: flex-end;
+    left: 0;
+    bottom: -35px;
+    .swiper-pagination-bullet{
+      margin: 0 2px;
+    }
+    
   }
   
   /* Bullets */

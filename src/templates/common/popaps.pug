@@ -7,14 +7,14 @@
                 .form__text
                     p И наш менеджер свяжется с вами в ближайшее время
                 .form__blockinput
-                    input(type="text" placeholder="Ваше имя")
-                    input(type="tel" placeholder="Ваш телефон")
-                    button(type="button")#btn2
+                    input(type="text" placeholder="Ваше имя" required)
+                    input(type="tell" placeholder="Ваш телефон" required)
+                    button(type="submit")#btn2
                         span Заказать звонок
                 //- .form__blockbutton
                 //-     button(type="button")#btn2
                 //-         span Заказать звонок
-            .close1#close1(href='#close', title='Close') 
+            .close1#close1( title='Close') 
                 img(src="./images/close.png", alt="" width="23")
             .imgbg
                 img(src="./images/popup.png", alt="")
@@ -30,40 +30,44 @@
                     p Наш менеджер свяжется с вами в ближайшее время
                 
 
-            .close2#close2(href='#close', title='Close') 
+            .close2#close2( title='Close') 
                 img(src="./images/close.png", alt="" width="23")
 
 
 script.
-    var btn1 = document.getElementById("btn1");
-    var btn2 = document.getElementById("btn2");
-    var btn3 = document.getElementById("btn3");
-    var openModal1 = document.getElementById("openModal1");
-    var close1 = document.getElementById("close1");
-    var openModal2 = document.getElementById("openModal2");
-    var close2 = document.getElementById("close2");
-
-    btn1.addEventListener('click', () => {
-        openModal1.classList.add('modalDialogcustomactive');
+    
+    $('#btn1').click(function() {
+        $('#openModal1').fadeIn(300).css('display', 'flex');
+        $('body').css('overflow','hidden');
     });
 
-    close1.addEventListener('click', () => {
-        openModal1.classList.remove('modalDialogcustomactive');
+    //- $('#btn2').click(function() {
+    //-     $('#openModal2').fadeIn(300).css('display', 'flex');
+    //-     $('#openModal1').css('display', 'none');
+    //-     $('body').css('overflow','hidden');
+    //- });
+
+    $('#btn3').click(function() {
+        $('#openModal1').fadeIn(300).css('display', 'flex');
+        $('body').css('overflow','hidden');
     });
 
-
-
-    btn2.addEventListener('click', () => {
-        openModal2.classList.add('modalDialogcustomactive');
-        openModal1.classList.remove('modalDialogcustomactive');
+    $('#btn4').click(function() {
+        $('#openModal1').fadeIn(300).css('display', 'flex');
+        $('body').css('overflow','hidden');
     });
 
-    close2.addEventListener('click', () => {
-        openModal2.classList.remove('modalDialogcustomactive');
+    $('#close1').click(function() {
+        $('#openModal1').css('display', 'none');
+        $('body').css('overflow','visible');
     });
+    
 
-
-
-    btn3.addEventListener('click', () => {
-        openModal1.classList.add('modalDialogcustomactive');
+    $('#close2').click(function() {
+        $('#openModal2').css('display', 'none');
+        $('body').css('overflow','visible');
     });
+    
+    
+
+    

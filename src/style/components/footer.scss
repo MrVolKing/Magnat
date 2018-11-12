@@ -25,9 +25,13 @@
         span{
             font-family: "izhitsa";
             font-size: 23px;
-            font-weight: 700;
+            font-weight: 400;
             letter-spacing: 2.5px;
             color: $white;
+            span{
+                color: #c7a948;
+                font-family: "yermak";
+            }
         }
     }
     &__description{

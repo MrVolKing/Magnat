@@ -43,7 +43,7 @@ const paths = {
     },
 
     scripts: {
-        src: 'src/scripts/**/*',
+        src: 'src/scripts/app.js',
         dest: 'build/scripts'
     },
 

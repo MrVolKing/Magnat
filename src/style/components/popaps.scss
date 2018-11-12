@@ -6,12 +6,13 @@
     right: 0;
     bottom: 0;
     z-index: 1000980909809809098098098098000;
-    padding-top: 14%;
     display: none;
+    align-items: center;
+    justify-content: center;
 }
 
 .modalDialogcustomactive{
-    display: block;
+    display: flex;
 }
 
 .contentpopap{
@@ -69,6 +70,7 @@
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 16px;
+                    line-height: 55px;
                 }
             }
             button{
@@ -135,6 +137,38 @@
         top: -5px;
         right: -37px;
         z-index: 2;
+    }
+}
+
+@media all and (max-width: 670px) {
+    .mainpopap{
+        width: 67vw;
+        height: auto;
+        .form{
+            width: auto;
+            height: auto;
+            padding: 20px;
+        }
+        .imgbg{
+            display: none;
+        }
+    }
+    .mainpopap .form__blockinput input{
+        width: 52vw;
+    }
+
+    .mainpopap .form__blockinput button{
+        width: 52vw;
+    }
+}
+
+@media all and (max-width: 510px){
+    .thanks{
+        width: 80vw;
+        height: auto;
+        .blockcontent{
+            padding: 25px;
+        }
     }
 }
 

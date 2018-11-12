@@ -27,7 +27,7 @@ block content
                     .nav__blockblocks
                         .nav__blockitem.nav__blockitem_1#nav1
                             a(href="#")
-                                span  Кирпич
+                                span Из кирпича
                         .nav__blockitem.nav__blockitem_2#nav2.activenav
                             a(href="#")
                                 span Каркасные дома
@@ -83,8 +83,8 @@ block content
                             //- .swiper-button-next 
                     .sectiontop__right
                         include ../common/calc.pug
-                        .section-one__blockcallback
-                            a(href="#")
+                        .section-one__blockcallback#btn4
+                            a(href="javascript: void(0);")
                                 span Задать вопрос
                                 div
 
@@ -98,7 +98,7 @@ block content
                         .secttabl__textblock
                             p В таблице приведена сравнительная характеристика строительных материалов по 10 бальной шкале. Где 10-самый высокий уровень показателя, а 0 самый низкий уровень показателя. 
                         .secttabl__tableblock
-                            table.secttabl__table(border="1",bordercolor="#c7a948" cellspacing="0")
+                            table.secttabl__table.teblrespons(border="1",bordercolor="#c7a948" cellspacing="0")
                                 tr.secttabl__tr
                                     td.secttabl__td1 
                                     td.secttabl__td2 Каркас
@@ -109,61 +109,61 @@ block content
                                     td.secttabl__td7 Клееный брус
                                 tr
                                     td.secttabl__tdtext Экологичность
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
+                                    td 1
+                                    td 2
+                                    td 3
+                                    td 4
+                                    td 5
+                                    td 6
                                 tr
                                     td.secttabl__tdtext Скорость стр-ва
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
+                                    td 1
+                                    td 2 
+                                    td 3
+                                    td 4
+                                    td 5
+                                    td 6
                                 tr
                                     td.secttabl__tdtext Срок службы
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
+                                    td 1
+                                    td 2
+                                    td 3
+                                    td 4
+                                    td 5 
+                                    td 6
                                 tr
                                     td.secttabl__tdtext Огнеустойчивость
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
+                                    td 1
+                                    td 2 
+                                    td 3
+                                    td 4
+                                    td 5 
+                                    td 6
                                 tr
                                     td.secttabl__tdtext Теплоемкость
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
+                                    td 1
+                                    td 2
+                                    td 3 
+                                    td 4 
+                                    td 5
+                                    td 6
                                 tr
                                     td.secttabl__tdtext Морозостойкость
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
+                                    td 1
+                                    td 2
+                                    td 3
+                                    td 4
+                                    td 5
+                                    td 6
                                 tr
                                     td.secttabl__tdtext Звукоизоляция
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
-                                    td
-                    .secttabl__right 
+                                    td 1
+                                    td 2
+                                    td 3
+                                    td 4
+                                    td 5
+                                    td 6
+                    .secttabl__right  
                         form.secttabl__formradio.visible#formradio
                             .secttabl__title
                                 span А какой дом хотите построить Вы? 
@@ -604,7 +604,7 @@ block content
                         
         include ../common/footer.pug
         include ../common/popaps.pug
-        include ../common/script.pug
+        //- include ../common/script.pug
         include ../common/scriptnav.pug
 
         script.

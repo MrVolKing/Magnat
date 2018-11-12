@@ -61,22 +61,23 @@ block content
                                 //- .swiper-button-next 
                         .section-one__right
                             include ../common/calc.pug
-                            .section-one__blockcallback
-                                a(href="#")
+                            .section-one__blockcallback#btn4
+                                a(href="javascript: void(0);")
                                     span Задать вопрос
                                     div
-                                
+                                                                                            
                     section.section-table
+                        //- .teblrespons  
                         table.section-table__table(border="1",bordercolor="#c7a948" cellspacing="0")
                             tr.section-table__tr
-                                td.section-table__td1 
-                                td.section-table__td2 Этаж
-                                td.section-table__td3 Каркас
-                                td.section-table__td4 Кирпич
-                                td.section-table__td5 Ракушечник
-                                td.section-table__td6 Газобетон
-                                td.section-table__td7 Пеноблоки
-                                td.section-table__td8 Клееный брус
+                                td.section-table__td1.section-table__td-title 
+                                td.section-table__td2.section-table__td-title Этаж
+                                td.section-table__td3.section-table__td-title Каркас
+                                td.section-table__td4.section-table__td-title Кирпич
+                                td.section-table__td5.section-table__td-title Ракушечник
+                                td.section-table__td6.section-table__td-title Газобетон
+                                td.section-table__td7.section-table__td-title Пеноблоки
+                                td.section-table__td8.section-table__td-title Клееный брус
                             tr
                                 td.section-table__tdtext(rowspan="2") Эконом
                                 td 2
@@ -307,4 +308,4 @@ block content
         
         include ../common/footer.pug
         include ../common/popaps.pug
-        include ../common/script.pug
+        //- include ../common/script.pug

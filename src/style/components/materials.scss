@@ -368,6 +368,7 @@
     &__titleblock{
         margin-bottom: 32px;
         margin-top: -8px;
+        padding-top: 10px;
     }
     .materials__shadowblock2{
         position: absolute;
@@ -706,14 +707,15 @@
     }
     .secttabl{
         &__table{
-            width: auto;
-            height: 40vw;
+            // width: auto;
+            // height: 40vw;
         }
     }
     .stages{
         &__left{
             width: 94vw;
-            height: 53vw;
+            height: 69vw;
+            overflow: hidden;
             img{
                 width: 100%;
                 height: auto;
@@ -740,7 +742,39 @@
             
         }
     }
+    .secttabl__textblock{
+        padding: 16px 0;
+    } 
     
+}
+
+@media all and (max-width: 800px){
+    .secttabl__tableblock{
+        width: 90vw;
+    }
+    .teblrespons{
+        text-align: left;
+        // padding-left: 10px;
+        tr{
+            .st-key{
+                text-align: left;
+                border-bottom: 1px solid #cbaa45;
+                border-right: 1px solid #cbaa45;
+            }
+            .st-val{
+                text-align: center;
+                border-bottom: 1px solid #cbaa45;
+            }
+        }
+        .st-head-row{
+            border-bottom: 1px solid #cbaa45;
+            // display: flex;
+            // align-self: center;
+            // justify-content: center;
+            text-align: center;
+            padding-top: 0 !important;
+        }
+    }
 }
 
 @media all and (max-width: 680px){
@@ -752,7 +786,7 @@
 @media all and (max-width: 650px) {
     .secttabl{
         &__table{
-            display: none;
+            // display: none;
         }
     }
 }
@@ -768,8 +802,20 @@
             padding: 37px 25px 47px 25px;
         }
     }
+    .stages{
+        &__left{
+            height: 89vw;
+        }
+    }
 }
 
+
+@media all and (max-width: 500px){
+    .conditions .blockblocksbottom__img{
+        width: 175px;
+        height: 120px;
+    }
+}
 
 
 

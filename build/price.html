@@ -8,15 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta content="ie-edge" http-equiv="x-ua-compatible">
     <link rel="stylesheet" href="./styles/app.min.css?7">
-    <script src="./scripts/app.js?7" defer></script><script src="./dist/js/jquery-3.2.1.min.js?7"></script> 
+    <script src="./scripts/app.js?7" defer></script><script src="./dist/js/jquery-3.2.1.min.js?7"></script>
 <script type="text/javascript" src="./dist/js/slick.js?7"></script>
-<link rel="stylesheet" href="./dist/css/slick.css?7">
-<link rel="stylesheet" href="./dist/css/slick-theme.css?7">
 <script src="./dist/js/swiper.min.js?7"></script>
-<link rel="stylesheet" href="./dist/css/photoswipe.css?7">
-<link rel="stylesheet" href="./dist/css/default-skin.css?7">
 <script src="./dist/js/photoswipe.min.js?7"></script>
 <script src="./dist/js/photoswipe-ui-default.min.js?7"></script> 
+<link rel="stylesheet" href="./dist/css/slick.css?7">
+<link rel="stylesheet" href="./dist/css/slick-theme.css?7">
+<link rel="stylesheet" href="./dist/css/photoswipe.css?7">
+<link rel="stylesheet" href="./dist/css/default-skin.css?7">
+<link rel="stylesheet" href="./dist/css/stacktable.css?7">
   </head>
   <body>
     <div class="content">
@@ -27,7 +28,7 @@
               <div class="header__centr"><a class="header__logoblock" href="./index.html"><img src="./images/logo.png" alt="">
                   <div class="logotext">Магнат<span>Ъ </span>Строй</div></a>
                 <div class="btnadapt" id="btnadapt"> 
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px&quot;" viewBox="0 0 49 24" enable-background="new 0 0 49 24" xml:space="preserve">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 49 24" enable-background="new 0 0 49 24" xml:space="preserve">
                     <path d="M1.1,3.5C0.5,3.5,0,3,0,2.4V1.7c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M1.1,13.8c-0.6,0-1.1-0.5-1.1-1.1V12c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.7 c0,0.6-0.5,1.1-1.1,1.1H1.1z M16.2,24c-0.6,0-1.1-0.5-1.1-1.1v-0.6c0-0.6,0.5-1.1,1.1-1.1H47c0.6,0,1.1,0.5,1.1,1.1v0.6 c0,0.6-0.5,1.1-1.1,1.1H16.2z"></path>
                   </svg>
                 </div>
@@ -50,7 +51,7 @@
                       <div class="selectblock2__list2"><a class="selectblock2__item" href="./info.html">Строительство гостиниц</a><a class="selectblock2__item" href="./info.html">Строительство объектов общего назначения </a><a class="selectblock2__item" href="./info.html">Строительство торговых и офисных центров</a><a class="selectblock2__item" href="./info.html">Строительство промышленных объектов </a><a class="selectblock2__item" href="./info.html">Строительство детских и школьных учреждений</a><a class="selectblock2__item" href="./info.html">Строительство спортивных комплексов    </a></div>
                     </div>
                   </div><a href="./materials.html">Из чего мы строим</a><a href="./services.html">Наши услуги </a><a href="./price.html">Цены</a><a href="./about.html">О нас</a><a href="./contacts.html">Контакты</a>
-                </div><a class="header__call" href="./info.html"><span>Еще нет земельного участка? Мы подберем!</span><img src="./images/map.png" alt=""></a>
+                </div><a class="header__call" href="./info_plotselection.html"><span>Еще нет земельного участка? Мы подберем!</span><img src="./images/map.png" alt=""></a>
               </div>
             </div>
             <div class="adaptmenu" id="adaptmenu">
@@ -145,7 +146,7 @@
                           <option value="1">Ракушечник</option>
                           <option value="2">Газобетон</option>
                           <option value="3">Пеноблок</option>
-                          <option value="4">Кирпичная</option>
+                          <option value="4">Кирпичный</option>
                           <option value="5">Клеённый брус</option>
                           <option value="6">Каркасный</option>
                         </select>
@@ -259,21 +260,21 @@
                       });
                   });
                 </script>
-                <div class="section-one__blockcallback"><a href="#"><span>Задать вопрос</span>
+                <div class="section-one__blockcallback" id="btn4"><a href="javascript: void(0);"><span>Задать вопрос</span>
                     <div></div></a></div>
               </div>
             </section>
             <section class="section-table">
               <table class="section-table__table" border="1" bordercolor="#c7a948" cellspacing="0">
                 <tr class="section-table__tr">
-                  <td class="section-table__td1"> </td>
-                  <td class="section-table__td2">Этаж</td>
-                  <td class="section-table__td3">Каркас</td>
-                  <td class="section-table__td4">Кирпич</td>
-                  <td class="section-table__td5">Ракушечник</td>
-                  <td class="section-table__td6">Газобетон</td>
-                  <td class="section-table__td7">Пеноблоки</td>
-                  <td class="section-table__td8">Клееный брус</td>
+                  <td class="section-table__td1 section-table__td-title"> </td>
+                  <td class="section-table__td2 section-table__td-title">Этаж</td>
+                  <td class="section-table__td3 section-table__td-title">Каркас</td>
+                  <td class="section-table__td4 section-table__td-title">Кирпич</td>
+                  <td class="section-table__td5 section-table__td-title">Ракушечник</td>
+                  <td class="section-table__td6 section-table__td-title">Газобетон</td>
+                  <td class="section-table__td7 section-table__td-title">Пеноблоки</td>
+                  <td class="section-table__td8 section-table__td-title">Клееный брус</td>
                 </tr>
                 <tr>
                   <td class="section-table__tdtext" rowspan="2">Эконом</td>
@@ -496,10 +497,10 @@
               <div class="form">
                 <div class="form__titleblock"><img src="./images/formicon.png" alt=""><span>Остались вопросы? </span></div>
                 <form class="form__blockform">
-                  <input class="form__input" type="text" placeholder="Имя">
-                  <input class="form__input" type="tell" placeholder="Телефон">
-                  <input class="form__input" type="email" placeholder="E-Mail">
-                  <button class="form__submit" type="button" id="btn3"><span>Связаться</span></button>
+                  <input class="form__input" type="text" placeholder="Имя" required>
+                  <input class="form__input" type="tell" placeholder="Телефон" required>
+                  <input class="form__input" type="email" placeholder="E-Mail" required>
+                  <button class="form__submit" type="submit" id="btn3"><span>Связаться</span></button>
                 </form>
               </div>
             </section>
@@ -510,20 +511,20 @@
         <div class="wrapper">
           <div class="footer">
             <div class="footer__block1">
-              <div class="footer__logo">  <a href="./index.html"><span>Магнат Строй</span></a></div>
+              <div class="footer__logo">  <a href="./index.html"><span>Магнат<span>Ъ </span>Строй</span></a></div>
               <div class="footer__description"><span>© все права защищены</span></div>
             </div>
             <div class="footer__block2"><a href="./projects.html"> <span class="footer__text">Проекты </span></a><a href="./info.html"><span class="footer__text">Строительство домов </span></a><a href="./materials.html">       <span class="footer__text">Из чего мы строим</span></a><a href="./services.html"><span class="footer__text">Наши услуги </span></a><a href="./price.html">   <span class="footer__text">Цены   </span></a></div>
-            <div class="footer__block3"><a href="./about.html"><span class="footer__text">О нас    </span></a><a href="./gallery.html">     <span class="footer__text">Фото</span></a><a href="./contacts.html"><span class="footer__text">Контакты</span></a><a href="./faq.html"><span class="footer__text">FAQ</span></a><a href="./info.html"><span class="footer__text">Блог</span></a></div>
+            <div class="footer__block3"><a href="./about.html"><span class="footer__text">О нас    </span></a><a href="./gallery.html">     <span class="footer__text">Фото</span></a><a href="./contacts.html"><span class="footer__text">Контакты</span></a><a href="./faq.html"><span class="footer__text">FAQ</span></a><a href="./info_blog.html"><span class="footer__text">Блог</span></a></div>
             <div class="footer__block4">
               <div class="footer__number"><span>(063) 523 65 65</span></div>
               <div class="footer__numberdesc"><span><a href="#">testemail@gmail.com</a></span></div>
               <div class="footer__blocksocial">
-                <div class="vk"><a href="https://vk.com/magnatstroy_crimea">
+                <div class="vk"><a href="https://vk.com/magnatstroy_crimea" target="_blank">
                     <svg width="30" height="30">
                       <use xlink:href="./images/sprite/sprite.svg#vk"></use>
                     </svg></a></div>
-                <div class="instagram"><a href=" https://www.instagram.com/house_crimea/?hl=ru">
+                <div class="instagram"><a href=" https://www.instagram.com/house_crimea/?hl=ru" target="_blank">
                     <svg width="30" height="30">
                       <use xlink:href="./images/sprite/sprite.svg#instagram"></use>
                     </svg></a></div>
@@ -543,12 +544,12 @@
                 <p>И наш менеджер свяжется с вами в ближайшее время</p>
               </div>
               <div class="form__blockinput">
-                <input type="text" placeholder="Ваше имя">
-                <input type="tel" placeholder="Ваш телефон">
-                <button type="button" id="btn2"><span>Заказать звонок</span></button>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tell" placeholder="Ваш телефон" required>
+                <button type="submit" id="btn2"><span>Заказать звонок</span></button>
               </div>
             </form>
-            <div class="close1" id="close1" href="#close" title="Close"> <img src="./images/close.png" alt="" width="23"></div>
+            <div class="close1" id="close1" title="Close"> <img src="./images/close.png" alt="" width="23"></div>
             <div class="imgbg"><img src="./images/popup.png" alt=""></div>
           </div>
         </div>
@@ -564,53 +565,42 @@
                 <p>Наш менеджер свяжется с вами в ближайшее время</p>
               </div>
             </div>
-            <div class="close2" id="close2" href="#close" title="Close"> <img src="./images/close.png" alt="" width="23"></div>
+            <div class="close2" id="close2" title="Close"> <img src="./images/close.png" alt="" width="23"></div>
           </div>
         </div>
       </div>
       <script>
-        var btn1 = document.getElementById("btn1");
-        var btn2 = document.getElementById("btn2");
-        var btn3 = document.getElementById("btn3");
-        var openModal1 = document.getElementById("openModal1");
-        var close1 = document.getElementById("close1");
-        var openModal2 = document.getElementById("openModal2");
-        var close2 = document.getElementById("close2");
-        
-        btn1.addEventListener('click', () => {
-            openModal1.classList.add('modalDialogcustomactive');
+        $('#btn1').click(function() {
+            $('#openModal1').fadeIn(300).css('display', 'flex');
+            $('body').css('overflow','hidden');
         });
         
-        close1.addEventListener('click', () => {
-            openModal1.classList.remove('modalDialogcustomactive');
+        //- $('#btn2').click(function() {
+        //-     $('#openModal2').fadeIn(300).css('display', 'flex');
+        //-     $('#openModal1').css('display', 'none');
+        //-     $('body').css('overflow','hidden');
+        //- });
+        
+        $('#btn3').click(function() {
+            $('#openModal1').fadeIn(300).css('display', 'flex');
+            $('body').css('overflow','hidden');
+        });
+        
+        $('#btn4').click(function() {
+            $('#openModal1').fadeIn(300).css('display', 'flex');
+            $('body').css('overflow','hidden');
+        });
+        
+        $('#close1').click(function() {
+            $('#openModal1').css('display', 'none');
+            $('body').css('overflow','visible');
         });
         
         
-        
-        btn2.addEventListener('click', () => {
-            openModal2.classList.add('modalDialogcustomactive');
-            openModal1.classList.remove('modalDialogcustomactive');
+        $('#close2').click(function() {
+            $('#openModal2').css('display', 'none');
+            $('body').css('overflow','visible');
         });
-        
-        close2.addEventListener('click', () => {
-            openModal2.classList.remove('modalDialogcustomactive');
-        });
-        
-        
-        
-        btn3.addEventListener('click', () => {
-            openModal1.classList.add('modalDialogcustomactive');
-        });
-      </script>
-      <script>
-        var textwrap = document.getElementById('textwrap');
-        var hidden = document.getElementById('hidden');
-        var shadow = document.getElementById('shadow');
-        
-            textwrap.addEventListener('click', function () { 
-                hidden.classList.toggle('hidden');
-                shadow.classList.toggle('shadownone');
-            });
       </script>
     </div>
   </body>
